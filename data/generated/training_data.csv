@@ -1,0 +1,514 @@
+table,column,query_type,test_value,execution_time_before,execution_time_after,cost_before,cost_after,scan_before,scan_after,improvement_percent,absolute_improvement_ms,index_recommended
+orders,customer_id,equality,84f28ac55d936946d201442e1a1e9058,3.432,0.008,3581.01,8.44,Seq Scan,Index Scan,99.76689976689977,3.424,1
+orders,customer_id,equality,be3fb1099513e32c002c7855a40f09bc,3.675,0.014,3581.01,8.44,Seq Scan,Index Scan,99.61904761904763,3.661,1
+orders,customer_id,equality,134192a1bcebeca7ca2e7311d9695690,3.726,0.014,3581.01,8.44,Seq Scan,Index Scan,99.62426194310254,3.712,1
+orders,customer_id,equality,fef96c428a08854cecacd8074d64a961,3.727,0.006,3581.01,8.44,Seq Scan,Index Scan,99.83901261067884,3.721,1
+orders,customer_id,equality,32a2e01de91e849b9869ea5f59fdbd29,3.76,0.008,3581.01,8.44,Seq Scan,Index Scan,99.7872340425532,3.752,1
+orders,customer_id,equality,951034aede95c25c0108682c6253fdfa,3.731,0.008,3581.01,8.44,Seq Scan,Index Scan,99.78558027338515,3.723,1
+orders,customer_id,equality,d0c6b32e51040b9bb9baa2f6bc40a2ed,5.784,0.022,3581.01,8.44,Seq Scan,Index Scan,99.61964038727524,5.762,1
+orders,customer_id,equality,98833a857b8be9f0b483e78ae235729b,5.473,0.014,3581.01,8.44,Seq Scan,Index Scan,99.74419879408003,5.459,1
+orders,customer_id,equality,502b5f99cc5ae83a33d23ec900e76a3d,9.557,0.018,3581.01,8.44,Seq Scan,Index Scan,99.81165637752432,9.539,1
+orders,customer_id,equality,2025622039816f8d382f25f69c86efd0,5.23,0.032,3581.01,8.44,Seq Scan,Index Scan,99.38814531548758,5.198,1
+orders,customer_id,equality,67fce71cc00b76f5078ceecad54dda52,5.394,0.022,3581.01,8.44,Seq Scan,Index Scan,99.59213941416388,5.372,1
+orders,customer_id,equality,68c4ac73f19217101bdf5c2924552362,5.624,0.017,3581.01,8.44,Seq Scan,Index Scan,99.6977240398293,5.606999999999999,1
+orders,customer_id,equality,49a93b986c3e59664da488f75b3dd038,5.078,0.016,3581.01,8.44,Seq Scan,Index Scan,99.68491532099252,5.062,1
+orders,customer_id,equality,6d6414a8eb7e7e516280747b41470e55,5.757,0.032,3581.01,8.44,Seq Scan,Index Scan,99.44415494180997,5.725,1
+orders,customer_id,equality,6cf4840b6dfe102270032fca98880fc2,5.49,0.016,3581.01,8.44,Seq Scan,Index Scan,99.70856102003644,5.474,1
+orders,customer_id,equality,2d7b8e7c89fded81ad8bca738dc8c998,5.302,0.025,3581.01,8.44,Seq Scan,Index Scan,99.52847981893625,5.276999999999999,1
+orders,customer_id,equality,9dc59c8521403213441fc4a6b5044d20,5.452,0.021,3581.01,8.44,Seq Scan,Index Scan,99.61482024944974,5.431,1
+orders,customer_id,equality,3e18f03f31e621c23bc65a8322132f23,5.712,0.008,3581.01,8.44,Seq Scan,Index Scan,99.85994397759103,5.704,1
+orders,customer_id,equality,a0f20dc8a88e8cf077ec762de647c197,3.853,0.015,3581.01,8.44,Seq Scan,Index Scan,99.6106929665196,3.838,1
+orders,customer_id,equality,ee2f5465569df604e9c75c8d7b744331,9.082,0.014,3581.01,8.44,Seq Scan,Index Scan,99.84584893195331,9.068000000000001,1
+orders,customer_id,equality,1150ff8f8df8c315396b11358d33666f,6.155,0.015,3581.01,8.44,Seq Scan,Index Scan,99.75629569455727,6.140000000000001,1
+orders,customer_id,equality,e1053f60223f6446d021fc034d81f5a3,6.537,0.029,3581.01,8.44,Seq Scan,Index Scan,99.5563714242007,6.508,1
+orders,customer_id,equality,1334bf7fbbec2d3c41d69011aef3521b,6.507,0.018,3581.01,8.44,Seq Scan,Index Scan,99.72337482710927,6.489,1
+orders,customer_id,equality,41dd55a5cc1d3ee4e4cd29c5049078ac,6.51,0.019,3581.01,8.44,Seq Scan,Index Scan,99.70814132104454,6.491,1
+orders,customer_id,equality,d27ab6c5d811cf06526972c02529c67d,6.575,0.035,3581.01,8.44,Seq Scan,Index Scan,99.46768060836501,6.54,1
+orders,order_status,equality,invoiced,5.631,0.167,3581.01,126.63,Seq Scan,Index Scan,97.03427455158942,5.464,1
+orders,order_status,equality,canceled,6.961,0.206,3581.01,231.01,Seq Scan,Index Scan,97.04065507829334,6.755,1
+orders,order_status,equality,created,8.31,0.014,3581.01,11.03,Seq Scan,Index Scan,99.83152827918171,8.296000000000001,1
+orders,order_status,equality,delivered,14.882,15.216,3581.01,3581.01,Seq Scan,Seq Scan,-2.2443219997312163,-0.33399999999999963,0
+orders,order_status,equality,processing,8.011,0.218,3581.01,161.71,Seq Scan,Index Scan,97.27874173012108,7.792999999999999,1
+orders,order_status,equality,approved,6.281,0.025,3581.01,8.31,Seq Scan,Index Scan,99.60197420792866,6.255999999999999,1
+orders,order_status,equality,unavailable,6.995,0.308,3581.01,294.88,Seq Scan,Index Scan,95.59685489635454,6.687,1
+orders,order_status,equality,shipped,7.188,0.508,3581.01,447.5,Seq Scan,Index Scan,92.93266555370062,6.68,1
+order_items,product_id,equality,5524bbd7c991692980702322aa085419,5.765,0.021,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.6357328707719,5.744,1
+order_items,product_id,equality,8cd6267f12bb115b2b56d20d3a860cfc,5.913,0.026,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.56029088449179,5.8870000000000005,1
+order_items,product_id,equality,b02a3f9824b29932f36a74d811f1b14c,6.608,0.021,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.68220338983052,6.587,1
+order_items,product_id,equality,abb9d7140478c19fd773dc14e8071abd,6.995,0.029,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.5854181558256,6.966,1
+order_items,product_id,equality,87600b5691804854827b5df8c04767b2,7.749,0.021,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.7289972899729,7.728,1
+order_items,product_id,equality,3f4a3b8846f4522bd68853a50114da49,9.435,0.02,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.78802331743508,9.415000000000001,1
+order_items,product_id,equality,5def2e9864a9227d41b6b9f5a6cc199e,7.087,0.036,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.49202765627206,7.051,1
+order_items,product_id,equality,c36a269550e11c349965d2c033470074,5.947,0.045,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.2433159576257,5.902,1
+order_items,product_id,equality,4c7d111494b1116a2bec5e2d940e3439,7.661,0.023,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.6997780968542,7.638,1
+order_items,product_id,equality,8c4254fc0b9043ade973297a789b042d,5.986,0.029,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.51553625125293,5.957,1
+order_items,product_id,equality,a0adc3041e9917104f3fea4ba995adcb,6.296,0.02,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.68233799237612,6.276000000000001,1
+order_items,product_id,equality,9de5773a55b6893af083cacd786cde9d,6.899,0.046,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.33323670097116,6.853,1
+order_items,product_id,equality,5215505db2113a032810c3644c346a38,7.701,0.058,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.24685105830412,7.643,1
+order_items,product_id,equality,8719507b451f0290b7a707f076458264,7.165,0.02,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.7208653175157,7.1450000000000005,1
+order_items,product_id,equality,f42892b40225227fe465626ff509a92e,6.648,0.05,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.24789410348977,6.598,1
+order_items,product_id,equality,fcad6e5643f855de4b616a24e6dd25e4,6.479,0.024,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.62957246488655,6.455,1
+order_items,product_id,equality,509db8ad81eb83b247f4b73569bacc76,5.779,0.029,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.49818307665687,5.75,1
+order_items,product_id,equality,a48a82499de633cdd782856d69789b62,6.416,0.02,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.68827930174564,6.396000000000001,1
+order_items,product_id,equality,ca813b8942f85ee66b7b16d0e3855c37,5.619,0.025,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.5550809752625,5.593999999999999,1
+order_items,product_id,equality,9e261f5543c32312afa68843fabcc119,7.182,0.038,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.47089947089947,7.144,1
+order_items,product_id,equality,3846c262ddb08db0ea2cc1a1685590ff,6.067,0.031,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.48903906378771,6.0360000000000005,1
+order_items,product_id,equality,5d9805d8578300114d104afcfd6e6b39,9.359,0.023,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.75424724863767,9.336,1
+order_items,product_id,equality,faaa13c4eb6bb073693378999e40b9a0,7.887,0.026,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.67034360339801,7.861,1
+order_items,product_id,equality,a1ea5e26e19ed2e16b30866fb40735a7,7.905,0.027,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.6584440227704,7.878,1
+order_items,product_id,equality,16376850de9d7788d802f09e462231d0,5.803,0.038,3912.12,23.85,Seq Scan,Bitmap Heap Scan,99.34516629329657,5.765,1
+order_items,seller_id,equality,b1ac6ea7895bc3dd6f0f6f4abbdd2821,6.152,0.051,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.17100130039012,6.101,1
+order_items,seller_id,equality,6a8b085f816a1f75f92dbac6eb545f8f,8.059,0.13,3912.12,104.55,Seq Scan,Bitmap Heap Scan,98.38689663729991,7.928999999999999,1
+order_items,seller_id,equality,9b76ad3d04236f76bc71c59470305e13,6.619,0.028,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.57697537392356,6.591,1
+order_items,seller_id,equality,522620dcb18a6b31cd7bdf73665113a9,7.489,0.15,3912.12,104.55,Seq Scan,Bitmap Heap Scan,97.99706235812525,7.3389999999999995,1
+order_items,seller_id,equality,79ed755314cfe6df0daef2c6cd3022cd,9.105,0.036,3912.12,108.1,Seq Scan,Bitmap Heap Scan,99.60461285008238,9.069,1
+order_items,seller_id,equality,4003520d80d0bad1d5623f7aa3c63cda,11.349,0.031,3912.12,108.1,Seq Scan,Bitmap Heap Scan,99.72684818045641,11.318,1
+order_items,seller_id,equality,c4b911d06343b21dd906651f8101cb49,6.095,0.022,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.63904840032814,6.0729999999999995,1
+order_items,seller_id,equality,712e6ed8aa4aa1fa65dab41fed5737e4,7.822,0.072,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.0795193045257,7.75,1
+order_items,seller_id,equality,6860153b69cc696d5dcfe1cdaaafcf62,6.286,0.072,3912.12,104.55,Seq Scan,Bitmap Heap Scan,98.85459751829461,6.2139999999999995,1
+order_items,seller_id,equality,55029529919c0123526150bd26ca8f20,10.691,0.043,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.59779253577776,10.648000000000001,1
+order_items,seller_id,equality,cd52a8efd71af3336b14b5039b951cc1,9.382,0.02,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.78682583670859,9.362,1
+order_items,seller_id,equality,aeb36d67f1414f234d42a29e27cf1f17,5.955,0.022,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.6305625524769,5.933,1
+order_items,seller_id,equality,4e480be820e37de1444325ff358c9296,7.633,0.04,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.47595964889297,7.593,1
+order_items,seller_id,equality,d4a5e99e0dd915df64ba55a7fbd583fd,11.696,0.022,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.81190150478795,11.674,1
+order_items,seller_id,equality,432c37c9dfba871172ec162e20118b8c,8.778,0.044,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.49874686716792,8.734,1
+order_items,seller_id,equality,4b9750c8ad28220fe6702d4ecb7c898f,8.117,0.151,3912.12,682.65,Seq Scan,Bitmap Heap Scan,98.13970678822224,7.966000000000001,1
+order_items,seller_id,equality,11fb6f6d341adbe19e81733701704635,5.9,0.029,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.50847457627118,5.871,1
+order_items,seller_id,equality,9dd59e43f0c9f0553244e8f9c2fb247e,8.284,0.054,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.34814099468855,8.23,1
+order_items,seller_id,equality,9e7c5f4d7770eab65738cca38f9efccf,7.492,0.027,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.63961558996263,7.465,1
+order_items,seller_id,equality,4324dd16853115efb0fd9d0d131ba6f4,5.922,0.033,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.44275582573454,5.888999999999999,1
+order_items,seller_id,equality,ce248b21cb2adc36282ede306b7660e5,6.046,0.055,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.09030764141582,5.9910000000000005,1
+order_items,seller_id,equality,461ff5303b6c9c1a4a07f40c5aece516,13.253,0.021,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.84154531049573,13.232,1
+order_items,seller_id,equality,3903c788ded8dc03b5ebab37a2f3e9a1,10.444,0.023,3912.12,104.55,Seq Scan,Bitmap Heap Scan,99.77977786288778,10.421000000000001,1
+order_items,seller_id,equality,99a54764c341d5dc80b4a8fac4eba3fb,7.002,0.046,3912.12,108.1,Seq Scan,Bitmap Heap Scan,99.34304484433018,6.9559999999999995,1
+order_items,seller_id,equality,d90fe2229fee1a5da999ccd0c06c1667,7.035,0.038,3912.12,108.1,Seq Scan,Bitmap Heap Scan,99.45984363894812,6.997,1
+products,product_category_name,equality,fashion_roupa_infanto_juvenil,1.675,0.027,964.89,15.69,Seq Scan,Bitmap Heap Scan,98.38805970149255,1.6480000000000001,1
+products,product_category_name,equality,casa_construcao,1.924,0.282,964.89,430.6,Seq Scan,Bitmap Heap Scan,85.34303534303534,1.642,1
+products,product_category_name,equality,casa_conforto,1.872,0.082,964.89,281.05,Seq Scan,Bitmap Heap Scan,95.61965811965811,1.79,1
+products,product_category_name,equality,musica,1.529,0.052,964.89,88.85,Seq Scan,Bitmap Heap Scan,96.59908436886853,1.4769999999999999,1
+products,product_category_name,equality,bebidas,1.869,0.064,964.89,215.91,Seq Scan,Bitmap Heap Scan,96.5757089352595,1.805,1
+products,product_category_name,equality,eletrodomesticos_2,2.058,0.097,964.89,243.9,Seq Scan,Bitmap Heap Scan,95.28668610301263,1.9609999999999999,1
+products,product_category_name,equality,relogios_presentes,1.597,0.43,964.89,588.34,Seq Scan,Bitmap Heap Scan,73.0745147150908,1.167,1
+products,product_category_name,equality,artes,2.783,0.146,964.89,149.44,Seq Scan,Bitmap Heap Scan,94.75386273805246,2.637,1
+products,product_category_name,equality,telefonia,3.878,0.61,964.89,584.54,Seq Scan,Bitmap Heap Scan,84.27024239298608,3.2680000000000002,1
+products,product_category_name,equality,perfumaria,1.96,0.508,964.89,598.7,Seq Scan,Bitmap Heap Scan,74.08163265306122,1.452,1
+products,product_category_name,equality,livros_importados,2.34,0.038,964.89,109.84,Seq Scan,Bitmap Heap Scan,98.37606837606839,2.302,1
+products,product_category_name,equality,informatica_acessorios,1.74,0.557,964.89,594.74,Seq Scan,Bitmap Heap Scan,67.98850574712642,1.1829999999999998,1
+products,product_category_name,equality,artigos_de_festas,1.876,0.036,964.89,100.95,Seq Scan,Bitmap Heap Scan,98.08102345415777,1.8399999999999999,1
+products,product_category_name,equality,climatizacao,1.931,0.075,964.89,301.59,Seq Scan,Bitmap Heap Scan,96.11600207146557,1.856,1
+products,product_category_name,equality,ferramentas_jardim,2.554,0.395,964.89,601.83,Seq Scan,Bitmap Heap Scan,84.53406421299921,2.159,1
+products,product_category_name,equality,livros_tecnicos,1.949,0.123,964.89,299.58,Seq Scan,Bitmap Heap Scan,93.68907131862494,1.826,1
+products,product_category_name,equality,fashion_calcados,1.828,0.111,964.89,368.34,Seq Scan,Bitmap Heap Scan,93.9277899343545,1.717,1
+products,product_category_name,equality,artigos_de_natal,2.347,0.04,964.89,186.28,Seq Scan,Bitmap Heap Scan,98.29569663400085,2.307,1
+products,product_category_name,equality,cama_mesa_banho,2.048,0.307,964.89,626.79,Seq Scan,Bitmap Heap Scan,85.009765625,1.741,1
+products,product_category_name,equality,artes_e_artesanato,0.836,0.033,964.89,70.11,Seq Scan,Bitmap Heap Scan,96.05263157894737,0.8029999999999999,0
+products,product_category_name,equality,brinquedos,1.833,0.467,964.89,590.31,Seq Scan,Bitmap Heap Scan,74.52264048008729,1.3659999999999999,1
+products,product_category_name,equality,moveis_cozinha_area_de_servico_jantar_e_jardim,1.803,0.051,964.89,246.18,Seq Scan,Bitmap Heap Scan,97.17138103161398,1.752,1
+products,product_category_name,equality,fashion_roupa_feminina,0.785,0.013,964.89,94.94,Seq Scan,Bitmap Heap Scan,98.34394904458598,0.772,0
+products,product_category_name,equality,moveis_decoracao,0.915,0.86,964.89,619.05,Seq Scan,Bitmap Heap Scan,6.010928961748639,0.05500000000000005,0
+products,product_category_name,equality,dvds_blu_ray,2.527,0.048,964.89,149.44,Seq Scan,Bitmap Heap Scan,98.10051444400474,2.479,1
+customers,customer_state,equality,RR,5.541,0.043,2794.01,197.5,Seq Scan,Bitmap Heap Scan,99.22396679299766,5.498,1
+customers,customer_state,equality,RJ,5.201,2.26,2794.01,1856.77,Seq Scan,Bitmap Heap Scan,56.54681791963084,2.941,1
+customers,customer_state,equality,DF,4.615,0.963,2794.01,1683.73,Seq Scan,Bitmap Heap Scan,79.13326110509209,3.652,1
+customers,customer_state,equality,AL,4.795,0.226,2794.01,988.39,Seq Scan,Bitmap Heap Scan,95.28675703858185,4.569,1
+customers,customer_state,equality,PA,4.622,0.59,2794.01,1422.77,Seq Scan,Bitmap Heap Scan,87.23496321938555,4.032,1
+customers,customer_state,equality,BA,5.03,1.071,2794.01,1638.45,Seq Scan,Bitmap Heap Scan,78.70775347912526,3.9590000000000005,1
+customers,customer_state,equality,MT,6.364,0.574,2794.01,1410.79,Seq Scan,Bitmap Heap Scan,90.98051539912005,5.79,1
+customers,customer_state,equality,SE,5.711,0.195,2794.01,919.14,Seq Scan,Bitmap Heap Scan,96.58553668359306,5.516,1
+customers,customer_state,equality,MG,4.678,2.944,2794.01,1834.18,Seq Scan,Bitmap Heap Scan,37.06712270200941,1.734,1
+customers,customer_state,equality,MS,5.797,0.379,2794.01,1291.12,Seq Scan,Bitmap Heap Scan,93.46213558737277,5.417999999999999,1
+customers,customer_state,equality,RS,4.745,1.513,2794.01,1681.98,Seq Scan,Bitmap Heap Scan,68.11380400421496,3.232,1
+customers,customer_state,equality,PB,7.031,0.278,2794.01,1137.74,Seq Scan,Bitmap Heap Scan,96.04608163845826,6.753,1
+customers,customer_state,equality,RN,6.349,0.272,2794.01,1028.28,Seq Scan,Bitmap Heap Scan,95.71586076547487,6.077,1
+customers,customer_state,equality,PI,4.437,0.264,2794.01,1073.24,Seq Scan,Bitmap Heap Scan,94.0500338066261,4.173,1
+customers,customer_state,equality,TO,4.708,0.194,2794.01,715.31,Seq Scan,Bitmap Heap Scan,95.87935429056924,4.514,1
+customers,customer_state,equality,MA,4.876,0.395,2794.01,1272.11,Seq Scan,Bitmap Heap Scan,91.89909762100082,4.481,1
+customers,customer_state,equality,AC,4.869,0.084,2794.01,274.44,Seq Scan,Bitmap Heap Scan,98.27479975354282,4.785,1
+customers,customer_state,equality,SC,5.899,1.273,2794.01,1642.08,Seq Scan,Bitmap Heap Scan,78.42007119850823,4.626,1
+customers,customer_state,equality,PE,4.523,0.731,2794.01,1660.73,Seq Scan,Bitmap Heap Scan,83.8381605129339,3.792,1
+customers,customer_state,equality,CE,4.539,0.63,2794.01,1596.97,Seq Scan,Bitmap Heap Scan,86.1202908129544,3.909,1
+customers,customer_state,equality,PR,4.91,1.68,2794.01,1669.69,Seq Scan,Bitmap Heap Scan,65.78411405295317,3.2300000000000004,1
+customers,customer_state,equality,GO,4.976,0.93,2794.01,1678.87,Seq Scan,Bitmap Heap Scan,81.31028938906752,4.046,1
+customers,customer_state,equality,AP,4.599,0.059,2794.01,165.46,Seq Scan,Bitmap Heap Scan,98.71711241574255,4.54,1
+customers,customer_state,equality,AM,4.756,0.144,2794.01,441.06,Seq Scan,Bitmap Heap Scan,96.97224558452481,4.612,1
+customers,customer_state,equality,RO,4.557,0.14,2794.01,721.91,Seq Scan,Bitmap Heap Scan,96.92780337941629,4.417000000000001,1
+sellers,seller_state,equality,AM,0.21,0.013,74.69,8.3,Seq Scan,Index Scan,93.80952380952381,0.19699999999999998,0
+sellers,seller_state,equality,MA,0.222,0.011,74.69,8.3,Seq Scan,Index Scan,95.04504504504504,0.211,0
+sellers,seller_state,equality,DF,0.217,0.056,74.69,41.29,Seq Scan,Bitmap Heap Scan,74.19354838709677,0.161,0
+sellers,seller_state,equality,PR,0.272,0.093,74.69,47.35,Seq Scan,Bitmap Heap Scan,65.80882352941177,0.17900000000000002,0
+sellers,seller_state,equality,SP,0.332,0.327,74.69,74.69,Seq Scan,Seq Scan,1.5060240963855434,0.0050000000000000044,0
+sellers,seller_state,equality,CE,0.217,0.024,74.69,31.76,Seq Scan,Bitmap Heap Scan,88.94009216589862,0.193,0
+sellers,seller_state,equality,PB,0.216,0.038,74.69,21.05,Seq Scan,Bitmap Heap Scan,82.4074074074074,0.178,0
+sellers,seller_state,equality,MS,0.237,0.023,74.69,18.79,Seq Scan,Bitmap Heap Scan,90.29535864978904,0.214,0
+sellers,seller_state,equality,PE,0.216,0.055,74.69,25.15,Seq Scan,Bitmap Heap Scan,74.53703703703704,0.161,0
+sellers,seller_state,equality,MG,0.241,0.076,74.69,45.22,Seq Scan,Bitmap Heap Scan,68.46473029045642,0.16499999999999998,0
+sellers,seller_state,equality,PA,0.224,0.011,74.69,8.3,Seq Scan,Index Scan,95.08928571428571,0.213,0
+sellers,seller_state,equality,RO,0.248,0.022,74.69,10.91,Seq Scan,Bitmap Heap Scan,91.12903225806453,0.226,0
+sellers,seller_state,equality,RJ,0.234,0.057,74.69,43.74,Seq Scan,Bitmap Heap Scan,75.64102564102565,0.17700000000000002,0
+sellers,seller_state,equality,SE,0.231,0.025,74.69,10.91,Seq Scan,Bitmap Heap Scan,89.17748917748918,0.20600000000000002,0
+sellers,seller_state,equality,ES,0.209,0.034,74.69,38.56,Seq Scan,Bitmap Heap Scan,83.73205741626793,0.175,0
+sellers,seller_state,equality,GO,0.223,0.034,74.69,42.8,Seq Scan,Bitmap Heap Scan,84.75336322869956,0.189,0
+sellers,seller_state,equality,MT,0.213,0.024,74.69,16.36,Seq Scan,Bitmap Heap Scan,88.73239436619718,0.189,0
+sellers,seller_state,equality,AC,0.211,0.012,74.69,8.3,Seq Scan,Index Scan,94.3127962085308,0.19899999999999998,0
+sellers,seller_state,equality,RN,0.226,0.019,74.69,18.79,Seq Scan,Bitmap Heap Scan,91.59292035398231,0.20700000000000002,0
+sellers,seller_state,equality,BA,0.218,0.026,74.69,36.66,Seq Scan,Bitmap Heap Scan,88.07339449541286,0.192,0
+sellers,seller_state,equality,SC,0.251,0.065,74.69,44.13,Seq Scan,Bitmap Heap Scan,74.10358565737052,0.186,0
+sellers,seller_state,equality,RS,0.234,0.049,74.69,42.89,Seq Scan,Bitmap Heap Scan,79.05982905982906,0.185,0
+sellers,seller_state,equality,PI,0.226,0.013,74.69,8.3,Seq Scan,Index Scan,94.24778761061945,0.213,0
+orders,order_purchase_timestamp,range,2018-02-27 21:15:19 -> 2018-02-28 21:15:19,5.439,0.283,3829.61,877.86,Seq Scan,Bitmap Heap Scan,94.7968376539805,5.156,1
+orders,order_purchase_timestamp,range,2017-05-19 21:15:19 -> 2017-05-20 21:15:19,5.564,0.07,3829.61,420.82,Seq Scan,Bitmap Heap Scan,98.74191229331416,5.494,1
+orders,order_purchase_timestamp,range,2018-03-24 21:15:19 -> 2018-03-25 21:15:19,5.457,0.129,3829.61,658.33,Seq Scan,Bitmap Heap Scan,97.6360637713029,5.327999999999999,1
+orders,order_purchase_timestamp,range,2016-09-15 21:15:19 -> 2016-09-16 21:15:19,5.362,0.021,3829.61,31.32,Seq Scan,Bitmap Heap Scan,99.60835509138381,5.341,1
+orders,order_purchase_timestamp,range,2018-08-01 21:15:19 -> 2018-08-02 21:15:19,4.95,0.223,3829.61,880.31,Seq Scan,Bitmap Heap Scan,95.4949494949495,4.727,1
+orders,order_purchase_timestamp,range,2018-09-12 21:15:19 -> 2018-09-13 21:15:19,4.972,0.017,3829.61,68.37,Seq Scan,Bitmap Heap Scan,99.65808527755429,4.955,1
+orders,order_purchase_timestamp,range,2016-12-30 21:15:19 -> 2016-12-31 21:15:19,5.536,0.022,3829.61,31.32,Seq Scan,Bitmap Heap Scan,99.60260115606935,5.513999999999999,1
+orders,order_purchase_timestamp,range,2018-08-03 21:15:19 -> 2018-08-04 21:15:19,5.269,0.159,3829.61,846.05,Seq Scan,Bitmap Heap Scan,96.98234959195293,5.11,1
+orders,order_purchase_timestamp,range,2018-03-07 21:15:19 -> 2018-03-08 21:15:19,5.549,0.173,3829.61,742.58,Seq Scan,Bitmap Heap Scan,96.88232113894395,5.376,1
+orders,order_purchase_timestamp,range,2018-10-12 21:15:19 -> 2018-10-13 21:15:19,4.9,0.016,3829.61,68.37,Seq Scan,Bitmap Heap Scan,99.67346938775509,4.884,1
+orders,order_purchase_timestamp,range,2017-06-04 21:15:19 -> 2017-06-07 21:15:19,5.302,0.298,3829.61,963.65,Seq Scan,Bitmap Heap Scan,94.37947944172011,5.004,1
+orders,order_purchase_timestamp,range,2018-06-22 21:15:19 -> 2018-06-25 21:15:19,4.94,0.384,3829.61,1380.65,Seq Scan,Bitmap Heap Scan,92.22672064777328,4.556,1
+orders,order_purchase_timestamp,range,2017-08-18 21:15:19 -> 2017-08-21 21:15:19,5.568,0.243,3829.61,1090.18,Seq Scan,Bitmap Heap Scan,95.63577586206897,5.324999999999999,1
+orders,order_purchase_timestamp,range,2016-12-27 21:15:19 -> 2016-12-30 21:15:19,5.654,0.024,3829.61,79.25,Seq Scan,Bitmap Heap Scan,99.57552175451008,5.63,1
+orders,order_purchase_timestamp,range,2017-07-01 21:15:19 -> 2017-07-04 21:15:19,5.336,0.248,3829.61,947.24,Seq Scan,Bitmap Heap Scan,95.35232383808095,5.088,1
+orders,order_purchase_timestamp,range,2017-11-23 21:15:19 -> 2017-11-26 21:15:19,5.986,1.191,3829.61,2271.12,Seq Scan,Bitmap Heap Scan,80.10357500835282,4.795,1
+orders,order_purchase_timestamp,range,2017-02-12 21:15:19 -> 2017-02-15 21:15:19,5.442,0.152,3829.61,534.25,Seq Scan,Bitmap Heap Scan,97.2069092245498,5.29,1
+orders,order_purchase_timestamp,range,2017-12-12 21:15:19 -> 2017-12-15 21:15:19,5.805,0.526,3829.61,1357.77,Seq Scan,Bitmap Heap Scan,90.93884582256676,5.279,1
+orders,order_purchase_timestamp,range,2016-09-07 21:15:19 -> 2016-09-10 21:15:19,5.29,0.012,3829.61,82.85,Seq Scan,Bitmap Heap Scan,99.77315689981097,5.2780000000000005,1
+orders,order_purchase_timestamp,range,2018-09-13 21:15:19 -> 2018-09-16 21:15:19,4.934,0.019,3829.61,186.98,Seq Scan,Bitmap Heap Scan,99.6149169031212,4.915,1
+orders,order_purchase_timestamp,range,2018-09-10 21:15:19 -> 2018-09-17 21:15:19,4.852,0.016,3829.61,399.82,Seq Scan,Bitmap Heap Scan,99.6702390766694,4.836,1
+orders,order_purchase_timestamp,range,2017-05-31 21:15:19 -> 2017-06-07 21:15:19,5.207,0.552,3829.61,1657.0,Seq Scan,Bitmap Heap Scan,89.39888611484538,4.654999999999999,1
+orders,order_purchase_timestamp,range,2018-01-29 21:15:19 -> 2018-02-05 21:15:19,5.79,0.884,3829.61,2205.37,Seq Scan,Bitmap Heap Scan,84.73229706390327,4.906,1
+orders,order_purchase_timestamp,range,2017-03-05 21:15:19 -> 2017-03-12 21:15:19,5.093,0.421,3829.61,1353.91,Seq Scan,Bitmap Heap Scan,91.73375220891418,4.672,1
+orders,order_purchase_timestamp,range,2018-02-05 21:15:19 -> 2018-02-12 21:15:19,6.237,0.779,3829.61,2272.78,Seq Scan,Bitmap Heap Scan,87.51002084335417,5.458,1
+orders,order_purchase_timestamp,range,2016-12-21 21:15:19 -> 2016-12-28 21:15:19,5.485,0.013,3829.61,173.49,Seq Scan,Bitmap Heap Scan,99.76298997265269,5.472,1
+orders,order_purchase_timestamp,range,2018-06-06 21:15:19 -> 2018-06-13 21:15:19,5.129,0.788,3829.61,2192.86,Seq Scan,Bitmap Heap Scan,84.63638136088906,4.340999999999999,1
+orders,order_purchase_timestamp,range,2017-07-06 21:15:19 -> 2017-07-13 21:15:19,5.29,0.619,3829.61,1767.9,Seq Scan,Bitmap Heap Scan,88.29867674858224,4.671,1
+orders,order_purchase_timestamp,range,2018-06-20 21:15:19 -> 2018-06-27 21:15:19,5.34,0.949,3829.61,2186.19,Seq Scan,Bitmap Heap Scan,82.22846441947566,4.391,1
+orders,order_purchase_timestamp,range,2018-05-20 21:15:19 -> 2018-06-03 21:15:19,5.057,0.948,3829.61,2466.38,Seq Scan,Bitmap Heap Scan,81.25370773185682,4.109,1
+orders,order_purchase_timestamp,range,2017-03-26 21:15:19 -> 2017-04-09 21:15:19,5.204,0.727,3829.61,1972.95,Seq Scan,Bitmap Heap Scan,86.02997694081476,4.476999999999999,1
+orders,order_purchase_timestamp,range,2017-02-07 21:15:19 -> 2017-02-21 21:15:19,5.521,0.584,3829.61,1685.57,Seq Scan,Bitmap Heap Scan,89.42220612207934,4.937,1
+orders,order_purchase_timestamp,range,2017-09-21 21:15:19 -> 2017-10-05 21:15:19,5.518,1.035,3829.61,2422.97,Seq Scan,Bitmap Heap Scan,81.24320405944182,4.483,1
+orders,order_purchase_timestamp,range,2017-02-16 21:15:19 -> 2017-03-02 21:15:19,5.256,0.426,3829.61,1770.83,Seq Scan,Bitmap Heap Scan,91.89497716894977,4.83,1
+orders,order_purchase_timestamp,range,2018-03-10 21:15:19 -> 2018-03-24 21:15:19,6.367,1.595,3829.61,2581.18,Seq Scan,Bitmap Heap Scan,74.94895555206534,4.772,1
+orders,order_purchase_timestamp,range,2018-03-01 21:15:19 -> 2018-03-15 21:15:19,5.829,1.381,3829.61,2578.61,Seq Scan,Bitmap Heap Scan,76.30811459941671,4.4479999999999995,1
+orders,order_purchase_timestamp,range,2016-09-04 21:15:19 -> 2016-09-18 21:15:19,5.345,0.019,3829.61,329.27,Seq Scan,Bitmap Heap Scan,99.644527595884,5.326,1
+orders,order_purchase_timestamp,range,2018-05-10 21:15:19 -> 2018-05-24 21:15:19,6.881,1.415,3829.61,2580.92,Seq Scan,Bitmap Heap Scan,79.43612846969917,5.466,1
+orders,order_purchase_timestamp,range,2017-08-01 21:15:19 -> 2017-08-15 21:15:19,5.139,0.988,3829.61,2417.75,Seq Scan,Bitmap Heap Scan,80.77446974119478,4.151,1
+orders,order_purchase_timestamp,range,2018-01-17 21:15:19 -> 2018-02-16 21:15:19,5.812,1.549,3829.61,2579.73,Seq Scan,Bitmap Heap Scan,73.34824501032347,4.263,1
+orders,order_purchase_timestamp,range,2016-09-23 21:15:19 -> 2016-10-23 21:15:19,5.608,0.22,3829.61,620.47,Seq Scan,Bitmap Heap Scan,96.07703281027105,5.388,1
+orders,order_purchase_timestamp,range,2016-12-27 21:15:19 -> 2017-01-26 21:15:19,5.474,0.383,3829.61,620.47,Seq Scan,Bitmap Heap Scan,93.00328827183047,5.091,1
+orders,order_purchase_timestamp,range,2017-09-10 21:15:19 -> 2017-10-10 21:15:19,5.811,1.891,3829.61,2536.36,Seq Scan,Bitmap Heap Scan,67.45826880055068,3.92,1
+orders,order_purchase_timestamp,range,2017-07-15 21:15:19 -> 2017-08-14 21:15:19,5.302,1.831,3829.61,2543.47,Seq Scan,Bitmap Heap Scan,65.46586193889098,3.4709999999999996,1
+orders,order_purchase_timestamp,range,2017-05-07 21:15:19 -> 2017-06-06 21:15:19,5.638,1.624,3829.61,2575.54,Seq Scan,Bitmap Heap Scan,71.19545938275984,4.013999999999999,1
+orders,order_purchase_timestamp,range,2016-11-02 21:15:19 -> 2016-12-02 21:15:19,5.439,0.015,3829.61,625.92,Seq Scan,Bitmap Heap Scan,99.7242140099283,5.424,1
+orders,order_purchase_timestamp,range,2017-05-08 21:15:19 -> 2017-06-07 21:15:19,5.545,1.781,3829.61,2576.99,Seq Scan,Bitmap Heap Scan,67.88097385031561,3.7640000000000002,1
+orders,order_purchase_timestamp,range,2018-04-07 21:15:19 -> 2018-05-07 21:15:19,5.722,1.768,3829.61,2597.26,Seq Scan,Bitmap Heap Scan,69.10171268787137,3.9540000000000006,1
+orders,order_purchase_timestamp,range,2016-11-23 21:15:19 -> 2016-12-23 21:15:19,5.47,0.021,3829.61,620.47,Seq Scan,Bitmap Heap Scan,99.61608775137111,5.449,1
+orders,order_purchase_timestamp,range,2016-11-30 21:15:19 -> 2017-01-29 21:15:19,5.285,0.335,3829.61,1061.34,Seq Scan,Bitmap Heap Scan,93.66130558183539,4.95,1
+orders,order_purchase_timestamp,range,2018-01-14 21:15:19 -> 2018-03-15 21:15:19,7.561,6.342,3829.61,2857.2,Seq Scan,Bitmap Heap Scan,16.12220605739982,1.2190000000000003,0
+orders,order_purchase_timestamp,range,2016-11-13 21:15:19 -> 2017-01-12 21:15:19,9.812,0.075,3829.61,1061.31,Seq Scan,Bitmap Heap Scan,99.23562984101102,9.737,1
+orders,order_purchase_timestamp,range,2018-03-03 21:15:19 -> 2018-05-02 21:15:19,7.888,3.324,3829.61,2848.07,Seq Scan,Bitmap Heap Scan,57.86004056795132,4.564,1
+orders,order_purchase_timestamp,range,2017-01-10 21:15:19 -> 2017-03-11 21:15:19,5.117,1.855,3829.61,2573.95,Seq Scan,Bitmap Heap Scan,63.748290013679885,3.262,1
+orders,order_purchase_timestamp,range,2017-01-13 21:15:19 -> 2017-03-14 21:15:19,5.954,2.228,3829.61,2578.64,Seq Scan,Bitmap Heap Scan,62.579778300302316,3.7259999999999995,1
+orders,order_purchase_timestamp,range,2018-07-11 21:15:19 -> 2018-09-09 21:15:19,5.768,4.203,3829.61,2713.58,Seq Scan,Bitmap Heap Scan,27.132454923717052,1.5649999999999995,1
+orders,order_purchase_timestamp,range,2018-01-03 21:15:19 -> 2018-03-04 21:15:19,7.399,2.988,3829.61,2863.05,Seq Scan,Bitmap Heap Scan,59.61616434653331,4.411,1
+orders,order_purchase_timestamp,range,2018-03-20 21:15:19 -> 2018-05-19 21:15:19,7.006,3.521,3829.61,2856.29,Seq Scan,Bitmap Heap Scan,49.74307736226093,3.4850000000000003,1
+orders,order_purchase_timestamp,range,2017-02-20 21:15:19 -> 2017-04-21 21:15:19,8.339,1.843,3829.61,2509.35,Seq Scan,Bitmap Heap Scan,77.89902866051085,6.496,1
+orders,order_purchase_timestamp,range,2017-06-02 21:15:19 -> 2017-08-31 21:15:19,6.828,3.421,3829.61,2755.73,Seq Scan,Bitmap Heap Scan,49.89748096074986,3.4070000000000005,1
+orders,order_purchase_timestamp,range,2018-02-26 21:15:19 -> 2018-05-27 21:15:19,6.381,5.147,3829.61,3101.48,Seq Scan,Bitmap Heap Scan,19.338661651778718,1.234,0
+orders,order_purchase_timestamp,range,2018-05-18 21:15:19 -> 2018-08-16 21:15:19,5.88,3.466,3829.61,3027.77,Seq Scan,Bitmap Heap Scan,41.05442176870748,2.4139999999999997,1
+orders,order_purchase_timestamp,range,2017-11-11 21:15:19 -> 2018-02-09 21:15:19,6.282,3.716,3829.61,3100.72,Seq Scan,Bitmap Heap Scan,40.846864056033105,2.566,1
+orders,order_purchase_timestamp,range,2017-04-08 21:15:19 -> 2017-07-07 21:15:19,10.042,3.328,3829.61,2679.64,Seq Scan,Bitmap Heap Scan,66.85919139613623,6.714,1
+orders,order_purchase_timestamp,range,2018-03-10 21:15:19 -> 2018-06-08 21:15:19,7.39,4.855,3829.61,3070.15,Seq Scan,Bitmap Heap Scan,34.303112313937746,2.5349999999999993,1
+orders,order_purchase_timestamp,range,2017-03-28 21:15:19 -> 2017-06-26 21:15:19,12.087,4.103,3829.61,2676.16,Seq Scan,Bitmap Heap Scan,66.05443865309837,7.984,1
+orders,order_purchase_timestamp,range,2017-07-20 21:15:19 -> 2017-10-18 21:15:19,6.398,3.52,3829.61,2806.25,Seq Scan,Bitmap Heap Scan,44.982807127227254,2.8779999999999997,1
+orders,order_purchase_timestamp,range,2017-10-17 21:15:19 -> 2018-01-15 21:15:19,6.617,3.993,3829.61,3021.72,Seq Scan,Bitmap Heap Scan,39.65543297566874,2.624,1
+orders,order_purchase_timestamp,range,2018-07-01 21:15:19 -> 2018-09-29 21:15:19,6.479,2.905,3829.61,2781.91,Seq Scan,Bitmap Heap Scan,55.16283377064363,3.5740000000000003,1
+orders,order_purchase_timestamp,range,2017-09-21 21:15:19 -> 2018-01-19 21:15:19,6.602,4.564,3829.61,3198.42,Seq Scan,Bitmap Heap Scan,30.86943350499849,2.0380000000000003,1
+orders,order_purchase_timestamp,range,2017-11-26 21:15:19 -> 2018-03-26 21:15:19,6.921,4.261,3829.61,3331.57,Seq Scan,Bitmap Heap Scan,38.4337523479266,2.66,1
+orders,order_purchase_timestamp,range,2018-02-15 21:15:19 -> 2018-06-15 21:15:19,6.889,5.433,3829.61,3323.43,Seq Scan,Bitmap Heap Scan,21.13514298156482,1.4560000000000004,1
+orders,order_purchase_timestamp,range,2017-12-10 21:15:19 -> 2018-04-09 21:15:19,8.977,6.361,3829.61,3312.36,Seq Scan,Bitmap Heap Scan,29.141138464966033,2.6160000000000005,1
+orders,order_purchase_timestamp,range,2017-01-05 21:15:19 -> 2017-05-05 21:15:19,5.591,1.556,3829.61,2613.44,Seq Scan,Bitmap Heap Scan,72.16955821856556,4.035,1
+orders,order_purchase_timestamp,range,2017-05-15 21:15:19 -> 2017-09-12 21:15:19,6.193,3.367,3829.61,2887.24,Seq Scan,Bitmap Heap Scan,45.63216534797351,2.8259999999999996,1
+orders,order_purchase_timestamp,range,2017-04-22 21:15:19 -> 2017-08-20 21:15:19,5.899,3.542,3829.61,2870.89,Seq Scan,Bitmap Heap Scan,39.9559247330056,2.357,1
+orders,order_purchase_timestamp,range,2016-11-08 21:15:19 -> 2017-03-08 21:15:19,5.714,1.609,3829.61,2582.57,Seq Scan,Bitmap Heap Scan,71.84109205460273,4.105,1
+orders,order_purchase_timestamp,range,2017-08-16 21:15:19 -> 2017-12-14 21:15:19,7.223,4.561,3829.61,3121.5,Seq Scan,Bitmap Heap Scan,36.85449259310536,2.662,1
+orders,order_purchase_timestamp,range,2016-09-25 21:15:19 -> 2017-01-23 21:15:19,5.606,0.43,3829.61,1666.6,Seq Scan,Bitmap Heap Scan,92.32964680699251,5.176,1
+orders,order_purchase_timestamp,range,2018-03-25 21:15:19 -> 2018-09-21 21:15:19,6.416,5.459,3829.61,3558.21,Seq Scan,Bitmap Heap Scan,14.915835411471331,0.9570000000000007,0
+orders,order_purchase_timestamp,range,2017-04-27 21:15:19 -> 2017-10-24 21:15:19,6.559,5.071,3829.61,3198.07,Seq Scan,Bitmap Heap Scan,22.686385119682882,1.4880000000000004,1
+orders,order_purchase_timestamp,range,2017-04-17 21:15:19 -> 2017-10-14 21:15:19,6.549,4.433,3829.61,3161.73,Seq Scan,Bitmap Heap Scan,32.31027637807299,2.1160000000000005,1
+orders,order_purchase_timestamp,range,2016-09-11 21:15:19 -> 2017-03-10 21:15:19,5.458,1.76,3829.61,2575.4,Seq Scan,Bitmap Heap Scan,67.75375595456211,3.6980000000000004,1
+orders,order_purchase_timestamp,range,2016-11-15 21:15:19 -> 2017-05-14 21:15:19,10.865,1.941,3829.61,2676.54,Seq Scan,Bitmap Heap Scan,82.13529682466636,8.924,1
+orders,order_purchase_timestamp,range,2016-11-03 21:15:19 -> 2017-05-02 21:15:19,5.697,2.351,3829.61,2632.32,Seq Scan,Bitmap Heap Scan,58.73266631560471,3.346,1
+orders,order_purchase_timestamp,range,2017-04-26 21:15:19 -> 2017-10-23 21:15:19,7.27,5.173,3829.61,3162.99,Seq Scan,Bitmap Heap Scan,28.84456671251719,2.0969999999999995,1
+orders,order_purchase_timestamp,range,2016-11-12 21:15:19 -> 2017-05-11 21:15:19,6.33,2.975,3829.61,2654.22,Seq Scan,Bitmap Heap Scan,53.001579778830965,3.355,1
+orders,order_purchase_timestamp,range,2016-10-06 21:15:19 -> 2017-04-04 21:15:19,5.597,1.96,3829.61,2545.56,Seq Scan,Bitmap Heap Scan,64.9812399499732,3.6370000000000005,1
+orders,order_purchase_timestamp,range,2017-08-08 21:15:19 -> 2018-02-04 21:15:19,6.881,7.699,3829.61,3567.77,Seq Scan,Bitmap Heap Scan,-11.887807004795809,-0.8179999999999996,0
+orders,order_purchase_timestamp,range,2016-10-10 21:15:19 -> 2017-07-07 21:15:19,6.113,2.897,3829.61,2897.17,Seq Scan,Bitmap Heap Scan,52.60919352200229,3.2160000000000006,1
+orders,order_purchase_timestamp,range,2017-05-25 21:15:19 -> 2018-02-19 21:15:19,9.501,7.282,3829.61,3829.61,Seq Scan,Seq Scan,23.355436269866324,2.2189999999999994,1
+orders,order_purchase_timestamp,range,2017-01-03 21:15:19 -> 2017-09-30 21:15:19,6.498,5.971,3829.61,3307.48,Seq Scan,Bitmap Heap Scan,8.110187750076948,0.5270000000000001,0
+orders,order_purchase_timestamp,range,2017-01-24 21:15:19 -> 2017-10-21 21:15:19,6.635,5.871,3829.61,3416.57,Seq Scan,Bitmap Heap Scan,11.514694800301422,0.7639999999999993,0
+orders,order_purchase_timestamp,range,2017-08-12 21:15:19 -> 2018-05-09 21:15:19,8.224,8.119,3829.61,3829.61,Seq Scan,Seq Scan,1.2767509727626511,0.10500000000000043,0
+orders,order_purchase_timestamp,range,2017-05-10 21:15:19 -> 2018-02-04 21:15:19,7.308,7.184,3829.61,3829.61,Seq Scan,Seq Scan,1.696770662287899,0.12399999999999967,0
+orders,order_purchase_timestamp,range,2016-12-22 21:15:19 -> 2017-09-18 21:15:19,6.874,4.542,3829.61,3252.52,Seq Scan,Bitmap Heap Scan,33.9249345359325,2.332,1
+orders,order_purchase_timestamp,range,2017-06-07 21:15:19 -> 2018-03-04 21:15:19,7.448,7.244,3829.61,3829.61,Seq Scan,Seq Scan,2.7389903329753036,0.20400000000000063,0
+orders,order_purchase_timestamp,range,2016-11-10 21:15:19 -> 2017-08-07 21:15:19,5.753,3.647,3829.61,3045.28,Seq Scan,Bitmap Heap Scan,36.60698765861291,2.1060000000000003,1
+orders,order_purchase_timestamp,range,2017-09-09 21:15:19 -> 2018-06-06 21:15:19,7.83,7.029,3829.61,3829.61,Seq Scan,Seq Scan,10.229885057471266,0.8010000000000002,0
+orders,order_purchase_timestamp,range,2017-06-23 21:15:19 -> 2018-06-23 21:15:19,7.956,7.898,3829.61,3829.61,Seq Scan,Seq Scan,0.7290095525389733,0.05800000000000072,0
+orders,order_purchase_timestamp,range,2017-06-26 21:15:19 -> 2018-06-26 21:15:19,7.51,8.13,3829.61,3829.61,Seq Scan,Seq Scan,-8.255659121171785,-0.620000000000001,0
+orders,order_purchase_timestamp,range,2017-05-04 21:15:19 -> 2018-05-04 21:15:19,8.156,7.606,3829.61,3829.61,Seq Scan,Seq Scan,6.743501716527718,0.5500000000000007,0
+orders,order_purchase_timestamp,range,2017-01-06 21:15:19 -> 2018-01-06 21:15:19,7.471,7.078,3829.61,3829.61,Seq Scan,Seq Scan,5.260339981260873,0.3929999999999998,0
+orders,order_purchase_timestamp,range,2017-10-10 21:15:19 -> 2018-10-10 21:15:19,7.859,7.569,3829.61,3829.61,Seq Scan,Seq Scan,3.6900369003690043,0.29000000000000004,0
+orders,order_purchase_timestamp,range,2017-03-31 21:15:19 -> 2018-03-31 21:15:19,7.678,7.963,3829.61,3829.61,Seq Scan,Seq Scan,-3.7119041417035703,-0.28500000000000014,0
+orders,order_purchase_timestamp,range,2016-12-10 21:15:19 -> 2017-12-10 21:15:19,7.196,7.379,3829.61,3829.61,Seq Scan,Seq Scan,-2.543079488604778,-0.18299999999999983,0
+orders,order_purchase_timestamp,range,2016-10-22 21:15:19 -> 2017-10-22 21:15:19,6.483,5.955,3829.61,3448.19,Seq Scan,Bitmap Heap Scan,8.144377602961587,0.5279999999999996,0
+orders,order_purchase_timestamp,range,2016-10-23 21:15:19 -> 2017-10-23 21:15:19,6.643,11.385,3829.61,3456.8,Seq Scan,Bitmap Heap Scan,-71.38341110943851,-4.742,0
+orders,order_purchase_timestamp,range,2017-04-12 21:15:19 -> 2018-08-25 21:15:19,13.916,7.862,3829.61,3829.61,Seq Scan,Seq Scan,43.503880425409605,6.054,1
+orders,order_purchase_timestamp,range,2017-03-04 21:15:19 -> 2018-07-17 21:15:19,8.818,7.801,3829.61,3829.61,Seq Scan,Seq Scan,11.533227489226576,1.0169999999999995,0
+orders,order_purchase_timestamp,range,2017-04-08 21:15:19 -> 2018-08-21 21:15:19,8.674,8.51,3829.61,3829.61,Seq Scan,Seq Scan,1.8907078625778155,0.1639999999999997,0
+orders,order_purchase_timestamp,range,2017-04-02 21:15:19 -> 2018-08-15 21:15:19,7.754,8.266,3829.61,3829.61,Seq Scan,Seq Scan,-6.603043590404958,-0.5120000000000005,0
+orders,order_purchase_timestamp,range,2017-05-01 21:15:19 -> 2018-09-13 21:15:19,8.653,8.1,3829.61,3829.61,Seq Scan,Seq Scan,6.39084710505028,0.5530000000000008,0
+orders,order_purchase_timestamp,range,2016-10-01 21:15:19 -> 2018-02-13 21:15:19,7.792,7.543,3829.61,3829.61,Seq Scan,Seq Scan,3.195585215605745,0.24899999999999967,0
+orders,order_purchase_timestamp,range,2016-10-24 21:15:19 -> 2018-03-08 21:15:19,7.575,7.851,3829.61,3829.61,Seq Scan,Seq Scan,-3.6435643564356406,-0.2759999999999998,0
+orders,order_purchase_timestamp,range,2016-10-05 21:15:19 -> 2018-02-17 21:15:19,7.885,7.836,3829.61,3829.61,Seq Scan,Seq Scan,0.6214331008243436,0.04899999999999949,0
+orders,order_purchase_timestamp,range,2017-03-29 21:15:19 -> 2018-08-11 21:15:19,8.214,7.937,3829.61,3829.61,Seq Scan,Seq Scan,3.37229121012905,0.27700000000000014,0
+orders,order_purchase_timestamp,range,2017-02-24 21:15:19 -> 2018-07-09 21:15:19,8.22,7.585,3829.61,3829.61,Seq Scan,Seq Scan,7.725060827250616,0.6350000000000007,0
+orders,order_purchase_timestamp,range,2016-09-17 21:15:19 -> 2018-08-18 21:15:19,8.62,8.184,3829.61,3829.61,Seq Scan,Seq Scan,5.058004640371229,0.43599999999999994,0
+orders,order_purchase_timestamp,range,2016-10-05 21:15:19 -> 2018-09-05 21:15:19,8.5,8.306,3829.61,3829.61,Seq Scan,Seq Scan,2.2823529411764807,0.19400000000000084,0
+orders,order_purchase_timestamp,range,2016-09-28 21:15:19 -> 2018-08-29 21:15:19,8.574,8.074,3829.61,3829.61,Seq Scan,Seq Scan,5.831583858175881,0.5,0
+orders,order_purchase_timestamp,range,2016-11-11 21:15:19 -> 2018-10-12 21:15:19,8.135,8.308,3829.61,3829.61,Seq Scan,Seq Scan,-2.12661339889367,-0.17300000000000004,0
+orders,order_purchase_timestamp,range,2016-10-31 21:15:19 -> 2018-10-01 21:15:19,8.257,8.501,3829.61,3829.61,Seq Scan,Seq Scan,-2.955068426789388,-0.24399999999999977,0
+orders,order_purchase_timestamp,range,2016-09-21 21:15:19 -> 2018-08-22 21:15:19,8.433,8.109,3829.61,3829.61,Seq Scan,Seq Scan,3.8420490928495177,0.32399999999999984,0
+orders,order_purchase_timestamp,range,2016-10-28 21:15:19 -> 2018-09-28 21:15:19,8.054,8.193,3829.61,3829.61,Seq Scan,Seq Scan,-1.7258505090638112,-0.13899999999999935,0
+orders,order_purchase_timestamp,range,2016-09-27 21:15:19 -> 2018-08-28 21:15:19,9.052,16.492,3829.61,3829.61,Seq Scan,Seq Scan,-82.19178082191783,-7.440000000000001,0
+orders,order_purchase_timestamp,range,2016-10-09 21:15:19 -> 2018-09-09 21:15:19,8.358,8.531,3829.61,3829.61,Seq Scan,Seq Scan,-2.0698731754008137,-0.17300000000000004,0
+orders,order_delivered_customer_date,range,2018-01-27 13:46:32 -> 2018-01-28 13:46:32,6.825,0.052,3829.61,690.29,Seq Scan,Bitmap Heap Scan,99.23809523809524,6.773000000000001,1
+orders,order_delivered_customer_date,range,2017-06-23 13:46:32 -> 2017-06-24 13:46:32,6.42,0.036,3829.61,366.37,Seq Scan,Bitmap Heap Scan,99.4392523364486,6.384,1
+orders,order_delivered_customer_date,range,2016-12-27 13:46:32 -> 2016-12-28 13:46:32,6.426,0.016,3829.61,35.09,Seq Scan,Bitmap Heap Scan,99.75101151571741,6.41,1
+orders,order_delivered_customer_date,range,2018-01-07 13:46:32 -> 2018-01-08 13:46:32,7.042,0.034,3829.61,595.78,Seq Scan,Bitmap Heap Scan,99.51718261857427,7.008,1
+orders,order_delivered_customer_date,range,2018-04-27 13:46:32 -> 2018-04-28 13:46:32,7.428,0.245,3829.61,590.26,Seq Scan,Bitmap Heap Scan,96.70166935918148,7.183,1
+orders,order_delivered_customer_date,range,2017-01-19 13:46:32 -> 2017-01-20 13:46:32,6.254,0.025,3829.61,35.09,Seq Scan,Bitmap Heap Scan,99.60025583626478,6.228999999999999,1
+orders,order_delivered_customer_date,range,2016-12-01 13:46:32 -> 2016-12-02 13:46:32,6.755,0.015,3829.61,35.09,Seq Scan,Bitmap Heap Scan,99.77794226498891,6.74,1
+orders,order_delivered_customer_date,range,2018-08-09 13:46:32 -> 2018-08-10 13:46:32,5.513,0.249,3829.61,783.51,Seq Scan,Bitmap Heap Scan,95.48340286595321,5.264,1
+orders,order_delivered_customer_date,range,2018-04-17 13:46:32 -> 2018-04-18 13:46:32,6.549,0.235,3829.61,909.23,Seq Scan,Bitmap Heap Scan,96.41166590319132,6.314,1
+orders,order_delivered_customer_date,range,2016-10-26 13:46:32 -> 2016-10-27 13:46:32,6.268,0.031,3829.61,35.09,Seq Scan,Bitmap Heap Scan,99.50542437779197,6.237,1
+orders,order_delivered_customer_date,range,2017-01-14 13:46:32 -> 2017-01-17 13:46:32,6.395,0.033,3829.61,93.6,Seq Scan,Bitmap Heap Scan,99.48397185301016,6.361999999999999,1
+orders,order_delivered_customer_date,range,2017-06-10 13:46:32 -> 2017-06-13 13:46:32,6.639,0.133,3829.61,882.73,Seq Scan,Bitmap Heap Scan,97.9966862479289,6.506,1
+orders,order_delivered_customer_date,range,2017-03-30 13:46:32 -> 2017-04-02 13:46:32,6.677,0.12,3829.61,682.35,Seq Scan,Bitmap Heap Scan,98.2027856821926,6.5569999999999995,1
+orders,order_delivered_customer_date,range,2017-12-01 13:46:32 -> 2017-12-04 13:46:32,6.696,0.296,3829.61,1513.81,Seq Scan,Bitmap Heap Scan,95.57945041816009,6.3999999999999995,1
+orders,order_delivered_customer_date,range,2018-02-20 13:46:32 -> 2018-02-23 13:46:32,7.046,0.717,3829.61,1785.52,Seq Scan,Bitmap Heap Scan,89.82401362475164,6.329000000000001,1
+orders,order_delivered_customer_date,range,2018-02-15 13:46:32 -> 2018-02-18 13:46:32,6.743,0.463,3829.61,1598.16,Seq Scan,Bitmap Heap Scan,93.13362005042266,6.28,1
+orders,order_delivered_customer_date,range,2017-05-17 13:46:32 -> 2017-05-20 13:46:32,6.459,0.299,3829.61,1072.48,Seq Scan,Bitmap Heap Scan,95.37080043350363,6.159999999999999,1
+orders,order_delivered_customer_date,range,2017-11-25 13:46:32 -> 2017-11-28 13:46:32,6.938,0.292,3829.61,1483.71,Seq Scan,Bitmap Heap Scan,95.79129432113001,6.646,1
+orders,order_delivered_customer_date,range,2016-12-10 13:46:32 -> 2016-12-13 13:46:32,6.061,0.016,3829.61,93.6,Seq Scan,Bitmap Heap Scan,99.73601715888466,6.045,1
+orders,order_delivered_customer_date,range,2017-03-28 13:46:32 -> 2017-03-31 13:46:32,6.51,0.274,3829.61,677.04,Seq Scan,Bitmap Heap Scan,95.79109062980031,6.236,1
+orders,order_delivered_customer_date,range,2017-11-03 13:46:32 -> 2017-11-10 13:46:32,6.611,0.675,3829.61,1827.11,Seq Scan,Bitmap Heap Scan,89.78974436545151,5.936,1
+orders,order_delivered_customer_date,range,2016-10-13 13:46:32 -> 2016-10-20 13:46:32,6.529,0.076,3829.61,200.37,Seq Scan,Bitmap Heap Scan,98.83596262827386,6.453,1
+orders,order_delivered_customer_date,range,2017-11-14 13:46:32 -> 2017-11-21 13:46:32,6.755,0.646,3829.61,1870.08,Seq Scan,Bitmap Heap Scan,90.43671354552184,6.109,1
+orders,order_delivered_customer_date,range,2017-07-09 13:46:32 -> 2017-07-16 13:46:32,6.551,0.445,3829.61,1490.85,Seq Scan,Bitmap Heap Scan,93.20714394748893,6.106,1
+orders,order_delivered_customer_date,range,2018-01-19 13:46:32 -> 2018-01-26 13:46:32,6.963,1.042,3829.61,2343.5,Seq Scan,Bitmap Heap Scan,85.03518598305328,5.921,1
+orders,order_delivered_customer_date,range,2017-07-30 13:46:32 -> 2017-08-06 13:46:32,6.459,0.547,3829.61,1827.13,Seq Scan,Bitmap Heap Scan,91.53119677968726,5.912,1
+orders,order_delivered_customer_date,range,2017-12-18 13:46:32 -> 2017-12-25 13:46:32,6.805,0.988,3829.61,2294.08,Seq Scan,Bitmap Heap Scan,85.48126377663483,5.817,1
+orders,order_delivered_customer_date,range,2018-09-24 13:46:32 -> 2018-10-01 13:46:32,5.763,0.022,3829.61,444.56,Seq Scan,Bitmap Heap Scan,99.61825438139857,5.741,1
+orders,order_delivered_customer_date,range,2018-05-03 13:46:32 -> 2018-05-10 13:46:32,6.575,1.048,3829.61,2405.81,Seq Scan,Bitmap Heap Scan,84.06083650190114,5.527,1
+orders,order_delivered_customer_date,range,2018-08-19 13:46:32 -> 2018-08-26 13:46:32,6.02,1.079,3829.61,2404.59,Seq Scan,Bitmap Heap Scan,82.07641196013289,4.941,1
+orders,order_delivered_customer_date,range,2018-02-21 13:46:32 -> 2018-03-07 13:46:32,6.868,1.566,3829.61,2577.53,Seq Scan,Bitmap Heap Scan,77.19860221316249,5.3020000000000005,1
+orders,order_delivered_customer_date,range,2017-03-18 13:46:32 -> 2017-04-01 13:46:32,6.783,0.687,3829.61,1942.53,Seq Scan,Bitmap Heap Scan,89.8717381689518,6.096,1
+orders,order_delivered_customer_date,range,2017-04-23 13:46:32 -> 2017-05-07 13:46:32,6.39,0.538,3829.61,1555.36,Seq Scan,Bitmap Heap Scan,91.58059467918622,5.851999999999999,1
+orders,order_delivered_customer_date,range,2017-08-10 13:46:32 -> 2017-08-24 13:46:32,6.679,0.93,3829.61,2401.55,Seq Scan,Bitmap Heap Scan,86.07575984428807,5.7490000000000006,1
+orders,order_delivered_customer_date,range,2017-05-21 13:46:32 -> 2017-06-04 13:46:32,6.739,1.097,3829.61,2399.04,Seq Scan,Bitmap Heap Scan,83.72162041845971,5.6419999999999995,1
+orders,order_delivered_customer_date,range,2016-12-09 13:46:32 -> 2016-12-23 13:46:32,6.156,0.019,3829.61,372.49,Seq Scan,Bitmap Heap Scan,99.69135802469135,6.137,1
+orders,order_delivered_customer_date,range,2018-05-27 13:46:32 -> 2018-06-10 13:46:32,6.598,1.164,3829.61,2507.18,Seq Scan,Bitmap Heap Scan,82.3582903910276,5.434,1
+orders,order_delivered_customer_date,range,2018-04-19 13:46:32 -> 2018-05-03 13:46:32,7.324,1.531,3829.61,2582.16,Seq Scan,Bitmap Heap Scan,79.09612233752048,5.793,1
+orders,order_delivered_customer_date,range,2016-12-12 13:46:32 -> 2016-12-26 13:46:32,6.39,0.02,3829.61,372.49,Seq Scan,Bitmap Heap Scan,99.6870109546166,6.37,1
+orders,order_delivered_customer_date,range,2017-08-28 13:46:32 -> 2017-09-11 13:46:32,6.519,0.898,3829.61,2332.57,Seq Scan,Bitmap Heap Scan,86.2248811167357,5.621,1
+orders,order_delivered_customer_date,range,2016-12-08 13:46:32 -> 2017-01-07 13:46:32,6.731,0.018,3829.61,703.48,Seq Scan,Bitmap Heap Scan,99.73258059723666,6.713,1
+orders,order_delivered_customer_date,range,2016-12-01 13:46:32 -> 2016-12-31 13:46:32,6.396,0.019,3829.61,703.48,Seq Scan,Bitmap Heap Scan,99.70293933708567,6.377,1
+orders,order_delivered_customer_date,range,2018-06-01 13:46:32 -> 2018-07-01 13:46:32,6.617,2.355,3829.61,2578.23,Seq Scan,Bitmap Heap Scan,64.40985340788878,4.2620000000000005,1
+orders,order_delivered_customer_date,range,2018-02-11 13:46:32 -> 2018-03-13 13:46:32,7.084,2.568,3829.61,2564.48,Seq Scan,Bitmap Heap Scan,63.7492941840768,4.516,1
+orders,order_delivered_customer_date,range,2018-03-09 13:46:32 -> 2018-04-08 13:46:32,7.134,1.933,3829.61,2598.7,Seq Scan,Bitmap Heap Scan,72.9044014578077,5.2010000000000005,1
+orders,order_delivered_customer_date,range,2018-04-07 13:46:32 -> 2018-05-07 13:46:32,6.679,1.989,3829.61,2627.69,Seq Scan,Bitmap Heap Scan,70.22009282826771,4.69,1
+orders,order_delivered_customer_date,range,2017-03-21 13:46:32 -> 2017-04-20 13:46:32,6.373,1.123,3829.61,2528.41,Seq Scan,Bitmap Heap Scan,82.37878550133375,5.25,1
+orders,order_delivered_customer_date,range,2018-03-15 13:46:32 -> 2018-04-14 13:46:32,8.108,2.26,3829.61,2616.79,Seq Scan,Bitmap Heap Scan,72.12629501726691,5.848000000000001,1
+orders,order_delivered_customer_date,range,2017-01-01 13:46:32 -> 2017-01-31 13:46:32,6.542,0.165,3829.61,703.48,Seq Scan,Bitmap Heap Scan,97.4778355243045,6.377,1
+orders,order_delivered_customer_date,range,2017-04-19 13:46:32 -> 2017-06-18 13:46:32,6.781,1.669,3829.61,2561.1,Seq Scan,Bitmap Heap Scan,75.3871110455685,5.112,1
+orders,order_delivered_customer_date,range,2016-12-20 13:46:32 -> 2017-02-18 13:46:32,6.443,0.797,3829.61,1545.08,Seq Scan,Bitmap Heap Scan,87.62998603135186,5.646,1
+orders,order_delivered_customer_date,range,2018-06-12 13:46:32 -> 2018-08-11 13:46:32,7.578,3.007,3829.61,2804.67,Seq Scan,Bitmap Heap Scan,60.31934547373977,4.571,1
+orders,order_delivered_customer_date,range,2016-12-19 13:46:32 -> 2017-02-17 13:46:32,6.664,0.874,3829.61,1636.04,Seq Scan,Bitmap Heap Scan,86.88475390156063,5.79,1
+orders,order_delivered_customer_date,range,2017-06-08 13:46:32 -> 2017-08-07 13:46:32,7.385,2.327,3829.61,2583.92,Seq Scan,Bitmap Heap Scan,68.49018280297902,5.058,1
+orders,order_delivered_customer_date,range,2017-11-28 13:46:32 -> 2018-01-27 13:46:32,7.369,3.433,3829.61,2815.77,Seq Scan,Bitmap Heap Scan,53.412946125661556,3.936,1
+orders,order_delivered_customer_date,range,2017-02-10 13:46:32 -> 2017-04-11 13:46:32,6.511,1.941,3829.61,2558.8,Seq Scan,Bitmap Heap Scan,70.18891107356782,4.57,1
+orders,order_delivered_customer_date,range,2018-05-17 13:46:32 -> 2018-07-16 13:46:32,6.707,3.654,3829.61,2786.08,Seq Scan,Bitmap Heap Scan,45.51960638139258,3.053,1
+orders,order_delivered_customer_date,range,2017-06-20 13:46:32 -> 2017-08-19 13:46:32,6.922,2.237,3829.61,2599.76,Seq Scan,Bitmap Heap Scan,67.68275065010113,4.685,1
+orders,order_delivered_customer_date,range,2018-05-26 13:46:32 -> 2018-07-25 13:46:32,6.802,3.318,3829.61,2758.28,Seq Scan,Bitmap Heap Scan,51.220229344310496,3.4839999999999995,1
+orders,order_delivered_customer_date,range,2018-06-11 13:46:32 -> 2018-09-09 13:46:32,6.682,4.415,3829.61,2989.68,Seq Scan,Bitmap Heap Scan,33.92696797366058,2.2670000000000003,1
+orders,order_delivered_customer_date,range,2016-11-20 13:46:32 -> 2017-02-18 13:46:32,6.422,0.775,3829.61,1903.6,Seq Scan,Bitmap Heap Scan,87.9321083774525,5.646999999999999,1
+orders,order_delivered_customer_date,range,2018-07-07 13:46:32 -> 2018-10-05 13:46:32,7.6,1.532,3829.61,2804.55,Seq Scan,Bitmap Heap Scan,79.84210526315789,6.068,1
+orders,order_delivered_customer_date,range,2017-01-02 13:46:32 -> 2017-04-02 13:46:32,4.612,0.811,3829.61,2571.57,Seq Scan,Bitmap Heap Scan,82.41543798785777,3.801,1
+orders,order_delivered_customer_date,range,2017-12-14 13:46:32 -> 2018-03-14 13:46:32,5.207,2.73,3829.61,3032.71,Seq Scan,Bitmap Heap Scan,47.5705780679854,2.477,1
+orders,order_delivered_customer_date,range,2018-05-31 13:46:32 -> 2018-08-29 13:46:32,4.811,2.93,3829.61,3057.88,Seq Scan,Bitmap Heap Scan,39.097900644356685,1.8809999999999998,1
+orders,order_delivered_customer_date,range,2018-05-12 13:46:32 -> 2018-08-10 13:46:32,4.72,2.198,3829.61,3026.7,Seq Scan,Bitmap Heap Scan,53.432203389830505,2.522,1
+orders,order_delivered_customer_date,range,2018-03-30 13:46:32 -> 2018-06-28 13:46:32,5.634,2.294,3829.61,3122.82,Seq Scan,Bitmap Heap Scan,59.282925097621586,3.3400000000000003,1
+orders,order_delivered_customer_date,range,2017-08-30 13:46:32 -> 2017-11-28 13:46:32,5.187,1.438,3829.61,2803.31,Seq Scan,Bitmap Heap Scan,72.2768459610565,3.7490000000000006,1
+orders,order_delivered_customer_date,range,2017-07-05 13:46:32 -> 2017-10-03 13:46:32,4.992,1.396,3829.61,2747.69,Seq Scan,Bitmap Heap Scan,72.03525641025641,3.596,1
+orders,order_delivered_customer_date,range,2017-05-08 13:46:32 -> 2017-09-05 13:46:32,5.294,1.638,3829.61,2864.42,Seq Scan,Bitmap Heap Scan,69.05931242916509,3.6559999999999997,1
+orders,order_delivered_customer_date,range,2017-08-28 13:46:32 -> 2017-12-26 13:46:32,5.248,2.055,3829.61,3059.92,Seq Scan,Bitmap Heap Scan,60.8422256097561,3.193,1
+orders,order_delivered_customer_date,range,2017-06-12 13:46:32 -> 2017-10-10 13:46:32,4.884,1.784,3829.61,2880.82,Seq Scan,Bitmap Heap Scan,63.47256347256348,3.1000000000000005,1
+orders,order_delivered_customer_date,range,2017-07-09 13:46:32 -> 2017-11-06 13:46:32,5.044,1.929,3829.61,2931.91,Seq Scan,Bitmap Heap Scan,61.75654242664551,3.1149999999999993,1
+orders,order_delivered_customer_date,range,2017-11-20 13:46:32 -> 2018-03-20 13:46:32,5.546,2.55,3829.61,3273.02,Seq Scan,Bitmap Heap Scan,54.02091597547782,2.9960000000000004,1
+orders,order_delivered_customer_date,range,2017-02-22 13:46:32 -> 2017-06-22 13:46:32,4.758,1.819,3829.61,2721.06,Seq Scan,Bitmap Heap Scan,61.76965111391341,2.939,1
+orders,order_delivered_customer_date,range,2017-08-14 13:46:32 -> 2017-12-12 13:46:32,4.988,2.055,3829.61,2999.03,Seq Scan,Bitmap Heap Scan,58.80112269446672,2.9330000000000003,1
+orders,order_delivered_customer_date,range,2018-01-22 13:46:32 -> 2018-05-22 13:46:32,5.304,2.854,3829.61,3387.1,Seq Scan,Bitmap Heap Scan,46.191553544494724,2.45,1
+orders,order_delivered_customer_date,range,2017-08-30 13:46:32 -> 2017-12-28 13:46:32,5.054,2.184,3829.61,3066.65,Seq Scan,Bitmap Heap Scan,56.78670360110804,2.87,1
+orders,order_delivered_customer_date,range,2016-12-24 13:46:32 -> 2017-04-23 13:46:32,4.607,0.889,3829.61,2519.38,Seq Scan,Bitmap Heap Scan,80.70327762101151,3.718,1
+orders,order_delivered_customer_date,range,2016-10-20 13:46:32 -> 2017-04-18 13:46:32,4.264,0.95,3829.61,2538.81,Seq Scan,Bitmap Heap Scan,77.72045028142588,3.314,1
+orders,order_delivered_customer_date,range,2018-01-23 13:46:32 -> 2018-07-22 13:46:32,5.887,4.205,3829.61,3781.25,Seq Scan,Bitmap Heap Scan,28.571428571428566,1.6819999999999995,1
+orders,order_delivered_customer_date,range,2017-01-21 13:46:32 -> 2017-07-20 13:46:32,4.959,1.809,3829.61,2857.74,Seq Scan,Bitmap Heap Scan,63.52087114337568,3.1499999999999995,1
+orders,order_delivered_customer_date,range,2016-12-25 13:46:32 -> 2017-06-23 13:46:32,4.715,1.435,3829.61,2749.99,Seq Scan,Bitmap Heap Scan,69.56521739130434,3.28,1
+orders,order_delivered_customer_date,range,2018-04-14 13:46:32 -> 2018-10-11 13:46:32,5.309,2.983,3829.61,3483.4,Seq Scan,Bitmap Heap Scan,43.812394047843284,2.326,1
+orders,order_delivered_customer_date,range,2017-05-17 13:46:32 -> 2017-11-13 13:46:32,4.68,2.22,3829.61,3158.26,Seq Scan,Bitmap Heap Scan,52.564102564102555,2.4599999999999995,1
+orders,order_delivered_customer_date,range,2018-03-13 13:46:32 -> 2018-09-09 13:46:32,5.448,4.551,3829.61,3763.19,Seq Scan,Bitmap Heap Scan,16.464757709251103,0.8970000000000002,0
+orders,order_delivered_customer_date,range,2017-07-09 13:46:32 -> 2018-01-05 13:46:32,5.636,2.757,3829.61,3339.81,Seq Scan,Bitmap Heap Scan,51.08232789212207,2.879,1
+orders,order_delivered_customer_date,range,2017-02-23 13:46:32 -> 2017-08-22 13:46:32,5.225,1.95,3829.61,2970.85,Seq Scan,Bitmap Heap Scan,62.679425837320565,3.2749999999999995,1
+orders,order_delivered_customer_date,range,2017-10-03 13:46:32 -> 2018-04-01 13:46:32,5.684,3.546,3829.61,3602.02,Seq Scan,Bitmap Heap Scan,37.61435608726249,2.1380000000000003,1
+orders,order_delivered_customer_date,range,2018-01-05 13:46:32 -> 2018-10-02 13:46:32,6.06,6.005,3829.61,3829.61,Seq Scan,Seq Scan,0.9075907590759029,0.054999999999999716,0
+orders,order_delivered_customer_date,range,2016-11-15 13:46:32 -> 2017-08-12 13:46:32,4.988,1.937,3829.61,2993.34,Seq Scan,Bitmap Heap Scan,61.166800320769845,3.051,1
+orders,order_delivered_customer_date,range,2018-01-04 13:46:32 -> 2018-10-01 13:46:32,5.913,6.091,3829.61,3829.61,Seq Scan,Seq Scan,-3.0103162523253837,-0.17799999999999994,0
+orders,order_delivered_customer_date,range,2017-02-13 13:46:32 -> 2017-11-10 13:46:32,5.485,3.435,3829.61,3398.98,Seq Scan,Bitmap Heap Scan,37.3746581586144,2.0500000000000003,1
+orders,order_delivered_customer_date,range,2017-04-18 13:46:32 -> 2018-01-13 13:46:32,5.566,3.69,3829.61,3694.53,Seq Scan,Bitmap Heap Scan,33.70463528566295,1.876,1
+orders,order_delivered_customer_date,range,2017-03-05 13:46:32 -> 2017-11-30 13:46:32,5.454,3.385,3829.61,3469.45,Seq Scan,Bitmap Heap Scan,37.935460212687936,2.069,1
+orders,order_delivered_customer_date,range,2016-12-30 13:46:32 -> 2017-09-26 13:46:32,5.411,2.613,3829.61,3192.31,Seq Scan,Bitmap Heap Scan,51.70948068748844,2.7979999999999996,1
+orders,order_delivered_customer_date,range,2017-05-23 13:46:32 -> 2018-02-17 13:46:32,5.765,5.911,3829.61,3829.61,Seq Scan,Seq Scan,-2.532523850823936,-0.1459999999999999,0
+orders,order_delivered_customer_date,range,2017-12-11 13:46:32 -> 2018-09-07 13:46:32,6.105,5.88,3829.61,3829.61,Seq Scan,Seq Scan,3.6855036855036936,0.22500000000000053,0
+orders,order_delivered_customer_date,range,2017-07-16 13:46:32 -> 2018-04-12 13:46:32,6.08,5.871,3829.61,3829.61,Seq Scan,Seq Scan,3.4374999999999942,0.20899999999999963,0
+orders,order_delivered_customer_date,range,2017-10-06 13:46:32 -> 2018-10-06 13:46:32,5.906,6.241,3829.61,3829.61,Seq Scan,Seq Scan,-5.672197764984761,-0.33499999999999996,0
+orders,order_delivered_customer_date,range,2017-03-14 13:46:32 -> 2018-03-14 13:46:32,6.051,5.968,3829.61,3829.61,Seq Scan,Seq Scan,1.3716741034539774,0.08300000000000018,0
+orders,order_delivered_customer_date,range,2017-08-20 13:46:32 -> 2018-08-20 13:46:32,6.244,6.521,3829.61,3829.61,Seq Scan,Seq Scan,-4.43625880845612,-0.27700000000000014,0
+orders,order_delivered_customer_date,range,2017-09-10 13:46:32 -> 2018-09-10 13:46:32,6.276,6.282,3829.61,3829.61,Seq Scan,Seq Scan,-0.09560229445507056,-0.006000000000000227,0
+orders,order_delivered_customer_date,range,2017-07-08 13:46:32 -> 2018-07-08 13:46:32,6.401,6.025,3829.61,3829.61,Seq Scan,Seq Scan,5.8740821746602006,0.37599999999999945,0
+orders,order_delivered_customer_date,range,2016-10-15 13:46:32 -> 2017-10-15 13:46:32,5.259,2.847,3829.61,3296.68,Seq Scan,Bitmap Heap Scan,45.86423274386766,2.4120000000000004,1
+orders,order_delivered_customer_date,range,2017-09-17 13:46:32 -> 2018-09-17 13:46:32,5.989,6.217,3829.61,3829.61,Seq Scan,Seq Scan,-3.8069794623476336,-0.22799999999999976,0
+orders,order_delivered_customer_date,range,2017-07-21 13:46:32 -> 2018-07-21 13:46:32,6.169,8.366,3829.61,3829.61,Seq Scan,Seq Scan,-35.61355162911331,-2.197,0
+orders,order_delivered_customer_date,range,2017-03-13 13:46:32 -> 2018-03-13 13:46:32,7.18,5.979,3829.61,3829.61,Seq Scan,Seq Scan,16.727019498607238,1.2009999999999996,0
+orders,order_delivered_customer_date,range,2017-09-15 13:46:32 -> 2018-09-15 13:46:32,6.158,6.223,3829.61,3829.61,Seq Scan,Seq Scan,-1.055537512179271,-0.0649999999999995,0
+orders,order_delivered_customer_date,range,2016-11-06 13:46:32 -> 2018-03-21 13:46:32,7.223,5.997,3829.61,3829.61,Seq Scan,Seq Scan,16.973556693894505,1.226,0
+orders,order_delivered_customer_date,range,2017-05-23 13:46:32 -> 2018-10-05 13:46:32,6.482,6.387,3829.61,3829.61,Seq Scan,Seq Scan,1.4655970379512595,0.09500000000000064,0
+orders,order_delivered_customer_date,range,2016-11-14 13:46:32 -> 2018-03-29 13:46:32,5.946,5.99,3829.61,3829.61,Seq Scan,Seq Scan,-0.7399932727884373,-0.04400000000000048,0
+orders,order_delivered_customer_date,range,2016-12-17 13:46:32 -> 2018-05-01 13:46:32,6.185,6.252,3829.61,3829.61,Seq Scan,Seq Scan,-1.0832659660468904,-0.06700000000000017,0
+orders,order_delivered_customer_date,range,2016-11-09 13:46:32 -> 2018-03-24 13:46:32,6.037,5.794,3829.61,3829.61,Seq Scan,Seq Scan,4.025178068577113,0.24300000000000033,0
+orders,order_delivered_customer_date,range,2017-05-26 13:46:32 -> 2018-10-08 13:46:32,6.352,6.567,3829.61,3829.61,Seq Scan,Seq Scan,-3.38476070528967,-0.21499999999999986,0
+orders,order_delivered_customer_date,range,2016-11-07 13:46:32 -> 2018-03-22 13:46:32,5.83,5.982,3829.61,3829.61,Seq Scan,Seq Scan,-2.6072041166380813,-0.15200000000000014,0
+orders,order_delivered_customer_date,range,2017-04-19 13:46:32 -> 2018-09-01 13:46:32,10.568,6.279,3829.61,3829.61,Seq Scan,Seq Scan,40.58478425435276,4.289,1
+orders,order_delivered_customer_date,range,2017-03-01 13:46:32 -> 2018-07-14 13:46:32,6.594,6.242,3829.61,3829.61,Seq Scan,Seq Scan,5.338186229905979,0.3520000000000003,0
+orders,order_delivered_customer_date,range,2016-11-19 13:46:32 -> 2018-04-03 13:46:32,6.293,6.176,3829.61,3829.61,Seq Scan,Seq Scan,1.8592086445256635,0.11699999999999999,0
+orders,order_delivered_customer_date,range,2016-10-28 13:46:32 -> 2018-09-28 13:46:32,6.425,6.571,3829.61,3829.61,Seq Scan,Seq Scan,-2.2723735408560297,-0.1459999999999999,0
+orders,order_delivered_customer_date,range,2016-10-29 13:46:32 -> 2018-09-29 13:46:32,10.74,9.466,3829.61,3829.61,Seq Scan,Seq Scan,11.862197392923658,1.274000000000001,0
+orders,order_delivered_customer_date,range,2016-10-24 13:46:32 -> 2018-09-24 13:46:32,8.857,9.037,3829.61,3829.61,Seq Scan,Seq Scan,-2.032290843400717,-0.1800000000000015,0
+orders,order_delivered_customer_date,range,2016-11-01 13:46:32 -> 2018-10-02 13:46:32,9.561,9.281,3829.61,3829.61,Seq Scan,Seq Scan,2.928563957744999,0.27999999999999936,0
+orders,order_delivered_customer_date,range,2016-10-27 13:46:32 -> 2018-09-27 13:46:32,8.83,10.801,3829.61,3829.61,Seq Scan,Seq Scan,-22.32163080407701,-1.971,0
+orders,order_delivered_customer_date,range,2016-11-12 13:46:32 -> 2018-10-13 13:46:32,9.098,11.502,3829.61,3829.61,Seq Scan,Seq Scan,-26.42338975599032,-2.404,0
+orders,order_delivered_customer_date,range,2016-11-11 13:46:32 -> 2018-10-12 13:46:32,8.676,9.605,3829.61,3829.61,Seq Scan,Seq Scan,-10.707699400645462,-0.9290000000000003,0
+orders,order_delivered_customer_date,range,2016-10-14 13:46:32 -> 2018-09-14 13:46:32,9.239,9.326,3829.61,3829.61,Seq Scan,Seq Scan,-0.9416603528520374,-0.08699999999999974,0
+customers,customer_state,in,ES,4.617,0.925,2794.01,1680.61,Seq Scan,Bitmap Heap Scan,79.96534546242148,3.692,1
+customers,customer_state,in,"SE,CE,PB,AL,RO",10.05,1.052,3166.92,1664.73,Seq Scan,Bitmap Heap Scan,89.53233830845771,8.998000000000001,1
+customers,customer_state,in,"ES,CE",8.232,1.179,2794.01,1637.33,Seq Scan,Bitmap Heap Scan,85.67784256559766,7.052999999999999,1
+customers,customer_state,in,"TO,MT",6.689,0.561,2794.01,1540.96,Seq Scan,Bitmap Heap Scan,91.61309612797129,6.128,1
+customers,customer_state,in,"SC,PE,PR,AL,RR,AM,PI,RJ,PB,MS",6.83,3.794,3042.64,2230.99,Seq Scan,Bitmap Heap Scan,44.450951683748166,3.036,1
+customers,customer_state,in,"PR,PI,PE,BA,PB,RN,MS,SC,ES,PA",6.676,2.921,3042.64,2057.34,Seq Scan,Bitmap Heap Scan,56.24625524266028,3.7550000000000003,1
+customers,customer_state,in,"AC,RR",6.524,0.108,2794.01,396.49,Seq Scan,Bitmap Heap Scan,98.34457388105457,6.416,1
+customers,customer_state,in,"RJ,PR,PE",8.385,3.187,2918.31,2047.83,Seq Scan,Bitmap Heap Scan,61.99165175909363,5.198,1
+customers,customer_state,in,"TO,PI,DF,GO,SE,PE,AL,SC,RO,AC",7.887,2.842,3042.64,1849.71,Seq Scan,Bitmap Heap Scan,63.966020032965645,5.045,1
+customers,customer_state,in,"CE,GO",10.776,1.37,2794.01,1633.03,Seq Scan,Bitmap Heap Scan,87.28656273199702,9.405999999999999,1
+customers,customer_state,in,RS,7.601,1.737,2794.01,1680.56,Seq Scan,Bitmap Heap Scan,77.14774371793185,5.864,1
+customers,customer_state,in,AP,4.802,0.059,2794.01,274.44,Seq Scan,Bitmap Heap Scan,98.77134527280299,4.742999999999999,1
+customers,customer_state,in,"PA,SE",7.394,0.676,2794.01,1595.59,Seq Scan,Bitmap Heap Scan,90.85745198809846,6.718,1
+customers,customer_state,in,"MS,RN,SE,BA,DF",9.944,1.641,3166.92,1760.38,Seq Scan,Bitmap Heap Scan,83.49758648431215,8.303,1
+customers,customer_state,in,"AL,AC",6.337,0.318,2794.01,1125.15,Seq Scan,Bitmap Heap Scan,94.9818526116459,6.019,1
+customers,customer_state,in,"RS,RO",7.181,1.886,2794.01,1688.01,Seq Scan,Bitmap Heap Scan,73.73624843336583,5.295,1
+customers,customer_state,in,"AM,RJ,CE",7.859,1.723,2918.31,1921.67,Seq Scan,Bitmap Heap Scan,78.07609110573864,6.136,1
+customers,customer_state,in,"ES,SP,RS",9.326,5.855,2918.31,2755.24,Seq Scan,Bitmap Heap Scan,37.218528844091786,3.471,1
+customers,customer_state,in,"RO,AL,RR,CE,GO,MA,TO,PB,RJ,PE",7.188,3.386,3042.64,2083.0,Seq Scan,Bitmap Heap Scan,52.89371174179187,3.8019999999999996,1
+customers,customer_state,in,"TO,BA,RO",7.596,1.306,2918.31,1662.11,Seq Scan,Bitmap Heap Scan,82.80674038967878,6.29,1
+customers,customer_state,in,"MG,SP,RR,RS,MA",9.774,11.711,3166.92,3166.92,Seq Scan,Seq Scan,-19.81788418252508,-1.9370000000000012,0
+customers,customer_state,in,"CE,PB",6.326,0.913,2794.01,1672.98,Seq Scan,Bitmap Heap Scan,85.56749920961111,5.412999999999999,1
+customers,customer_state,in,"AL,SP,BA,PR,AC",10.019,6.473,3166.92,2924.58,Seq Scan,Bitmap Heap Scan,35.39275376784111,3.5460000000000003,1
+customers,customer_state,in,"MS,PE",7.391,1.017,2794.01,1681.2,Seq Scan,Bitmap Heap Scan,86.24002164795021,6.3740000000000006,1
+customers,customer_state,in,AC,4.618,0.073,2794.01,225.71,Seq Scan,Bitmap Heap Scan,98.419229103508,4.545,1
+sellers,seller_state,in,"CE,PI,PA",0.409,0.03,78.56,37.44,Seq Scan,Bitmap Heap Scan,92.66503667481663,0.379,0
+sellers,seller_state,in,MA,0.252,0.013,74.69,8.3,Seq Scan,Index Scan,94.84126984126983,0.239,0
+sellers,seller_state,in,"MA,PA,SP,PI,MG,BA,RS,RO,ES,CE",0.422,0.422,82.45,82.45,Seq Scan,Seq Scan,0.0,0.0,0
+sellers,seller_state,in,"PA,RN,CE,PR,MA",0.55,0.089,86.29,53.41,Seq Scan,Bitmap Heap Scan,83.81818181818183,0.4610000000000001,0
+sellers,seller_state,in,"DF,MT,MA,RO,SP",0.625,0.628,86.29,86.29,Seq Scan,Seq Scan,-0.48000000000000037,-0.0030000000000000027,0
+sellers,seller_state,in,"CE,RJ,PI,GO,BA,PR,RO,ES,MG,DF",0.325,0.167,82.45,64.88,Seq Scan,Bitmap Heap Scan,48.61538461538461,0.158,0
+sellers,seller_state,in,"PA,AC",0.334,0.026,74.69,15.19,Seq Scan,Bitmap Heap Scan,92.21556886227545,0.308,0
+sellers,seller_state,in,"MS,PA,RJ",0.431,0.065,78.56,48.36,Seq Scan,Bitmap Heap Scan,84.91879350348029,0.366,0
+sellers,seller_state,in,"PI,AC,PE,MA,RJ,RO,RS,MT,ES,SE",0.284,0.101,82.45,52.38,Seq Scan,Bitmap Heap Scan,64.43661971830986,0.18299999999999997,0
+sellers,seller_state,in,"CE,AC,GO,SP,RJ",0.614,0.604,86.29,86.29,Seq Scan,Seq Scan,1.628664495114008,0.010000000000000009,0
+sellers,seller_state,in,"RO,MG,ES,PA,PE,RS,MT,SE,CE,BA",0.293,0.108,82.45,54.73,Seq Scan,Bitmap Heap Scan,63.139931740614344,0.185,0
+sellers,seller_state,in,"RN,BA",0.34,0.038,74.69,42.86,Seq Scan,Bitmap Heap Scan,88.82352941176471,0.30200000000000005,0
+sellers,seller_state,in,"GO,PB,DF,PE,SE,BA,RS,RJ,PI,AM",0.289,0.106,82.45,53.87,Seq Scan,Bitmap Heap Scan,63.32179930795848,0.183,0
+sellers,seller_state,in,"CE,PI,GO,BA,MS,SP,RJ,RN,SC,DF",0.388,0.421,82.45,82.45,Seq Scan,Seq Scan,-8.50515463917525,-0.032999999999999974,0
+sellers,seller_state,in,"GO,AM,PE,RJ,MS",0.519,0.076,86.29,49.98,Seq Scan,Bitmap Heap Scan,85.35645472061657,0.443,0
+sellers,seller_state,in,"RJ,PE,AM,GO,AC",0.54,0.073,86.29,49.89,Seq Scan,Bitmap Heap Scan,86.48148148148148,0.467,0
+sellers,seller_state,in,"PE,AM,PI",0.381,0.033,78.56,32.98,Seq Scan,Bitmap Heap Scan,91.33858267716535,0.348,0
+sellers,seller_state,in,"DF,AC,RS",0.413,0.069,78.56,48.0,Seq Scan,Bitmap Heap Scan,83.29297820823244,0.344,0
+sellers,seller_state,in,"PE,MG",0.362,0.07,74.69,49.69,Seq Scan,Bitmap Heap Scan,80.66298342541435,0.292,0
+sellers,seller_state,in,"BA,RO",0.337,0.041,74.69,41.95,Seq Scan,Bitmap Heap Scan,87.83382789317507,0.29600000000000004,0
+sellers,seller_state,in,SP,0.324,0.339,74.69,74.69,Seq Scan,Seq Scan,-4.629629629629633,-0.015000000000000013,0
+sellers,seller_state,in,"PI,DF,GO,SP,PB",0.618,0.589,86.29,86.29,Seq Scan,Seq Scan,4.692556634304211,0.029000000000000026,0
+sellers,seller_state,in,"SP,MG",0.424,0.418,74.69,74.69,Seq Scan,Seq Scan,1.4150943396226427,0.006000000000000005,0
+sellers,seller_state,in,"BA,MT,PR,MG,ES,PA,SC,MA,CE,RO",0.312,0.146,82.45,63.83,Seq Scan,Bitmap Heap Scan,53.205128205128204,0.166,0
+sellers,seller_state,in,"DF,CE,PE,ES,AM",0.514,0.053,86.29,46.38,Seq Scan,Bitmap Heap Scan,89.6887159533074,0.461,0
+orders,order_status,in,"invoiced,created,processing,shipped,delivered",17.18,26.568,3953.92,3953.92,Seq Scan,Seq Scan,-54.64493597206055,-9.388000000000002,0
+orders,order_status,in,"invoiced,approved",7.288,0.139,3581.01,172.01,Seq Scan,Index Scan,98.09275521405048,7.149,1
+orders,order_status,in,canceled,5.529,0.14,3581.01,261.85,Seq Scan,Index Scan,97.46789654548743,5.389,1
+orders,order_status,in,approved,3.481,0.013,3581.01,9.25,Seq Scan,Index Scan,99.626544096524,3.468,1
+orders,order_status,in,"shipped,canceled,processing,approved,created",6.575,0.272,3953.92,721.46,Seq Scan,Index Scan,95.86311787072242,6.303,1
+orders,order_status,in,"canceled,shipped,approved",5.51,0.214,3705.31,607.97,Seq Scan,Index Scan,96.11615245009074,5.295999999999999,1
+orders,order_status,in,"delivered,shipped,processing,canceled,invoiced",6.833,6.813,3953.92,3953.92,Seq Scan,Seq Scan,0.29269720474170147,0.020000000000000462,0
+orders,order_status,in,"approved,processing,created",5.657,0.103,3705.31,143.81,Seq Scan,Index Scan,98.17924695068058,5.554,1
+orders,order_status,in,delivered,5.66,5.904,3581.01,3581.01,Seq Scan,Seq Scan,-4.310954063604236,-0.24399999999999977,0
+orders,order_status,in,"approved,canceled",6.629,0.137,3581.01,296.19,Seq Scan,Index Scan,97.93332327651228,6.491999999999999,1
+orders,order_status,in,created,3.539,0.013,3581.01,11.19,Seq Scan,Index Scan,99.63266459451823,3.5260000000000002,1
+orders,order_status,in,"processing,canceled",5.194,0.159,3581.01,407.32,Seq Scan,Index Scan,96.9387755102041,5.035,1
+orders,order_status,in,shipped,3.542,0.146,3581.01,455.63,Seq Scan,Index Scan,95.8780350084698,3.396,1
+orders,order_status,in,"shipped,processing",4.98,0.294,3581.01,551.23,Seq Scan,Index Scan,94.09638554216868,4.686000000000001,1
+orders,order_status,in,processing,3.45,0.119,3581.01,157.28,Seq Scan,Index Scan,96.55072463768116,3.3310000000000004,1
+orders,order_status,in,"unavailable,canceled,shipped,approved,created",6.712,0.347,3953.92,808.27,Seq Scan,Index Scan,94.83015494636473,6.365,1
+orders,order_status,in,"unavailable,created",4.859,0.117,3581.01,291.37,Seq Scan,Index Scan,97.59209713932908,4.742,1
+orders,order_status,in,unavailable,3.461,0.081,3581.01,281.07,Seq Scan,Index Scan,97.65963594336897,3.38,1
+orders,order_status,in,"canceled,delivered,approved,created,invoiced",7.241,7.252,3953.92,3953.92,Seq Scan,Seq Scan,-0.15191271923767602,-0.01100000000000012,0
+orders,order_status,in,"canceled,delivered,shipped",11.012,10.727,3705.31,3705.31,Seq Scan,Seq Scan,2.5880857246640043,0.28500000000000014,0
+orders,order_status,in,"approved,processing,shipped,canceled,invoiced",9.577,0.729,3953.92,772.27,Seq Scan,Index Scan,92.38801294768717,8.848,1
+products,product_category_name,in,"industria_comercio_e_negocios,alimentos_bebidas,eletrodomesticos_2,moveis_quarto,artes_e_artesanato",2.933,0.244,1088.45,527.96,Seq Scan,Bitmap Heap Scan,91.68087282645756,2.689,1
+products,product_category_name,in,"casa_conforto,eletrodomesticos_2,livros_interesse_geral,moveis_sala,agro_industria_e_comercio",3.164,0.329,1088.45,618.46,Seq Scan,Bitmap Heap Scan,89.60176991150442,2.835,1
+products,product_category_name,in,"construcao_ferramentas_construcao,moveis_sala,sinalizacao_e_seguranca",2.689,0.359,1006.08,608.26,Seq Scan,Bitmap Heap Scan,86.64931201190034,2.33,1
+products,product_category_name,in,"fashion_roupa_infanto_juvenil,construcao_ferramentas_iluminacao,cama_mesa_banho,climatizacao,livros_interesse_geral,informatica_acessorios,audio,market_place,relogios_presentes,perfumaria",2.864,1.343,1047.29,761.12,Seq Scan,Bitmap Heap Scan,53.10754189944134,1.521,1
+products,product_category_name,in,"casa_construcao,cds_dvds_musicais,tablets_impressao_imagem",2.647,0.179,1006.08,446.44,Seq Scan,Bitmap Heap Scan,93.23762750283339,2.468,1
+products,product_category_name,in,"instrumentos_musicais,cool_stuff,construcao_ferramentas_jardim,flores,audio,la_cuisine,papelaria,moveis_quarto,construcao_ferramentas_construcao,cine_foto",2.199,0.74,1047.29,650.64,Seq Scan,Bitmap Heap Scan,66.34834015461574,1.4589999999999999,1
+products,product_category_name,in,construcao_ferramentas_seguranca,1.464,0.073,964.89,246.16,Seq Scan,Bitmap Heap Scan,95.0136612021858,1.391,1
+products,product_category_name,in,"casa_conforto_2,moveis_sala",2.199,0.125,964.89,360.48,Seq Scan,Bitmap Heap Scan,94.3155979990905,2.074,1
+products,product_category_name,in,"livros_tecnicos,papelaria,la_cuisine",2.665,0.397,1006.08,600.87,Seq Scan,Bitmap Heap Scan,85.10318949343339,2.268,1
+products,product_category_name,in,"consoles_games,portateis_cozinha_e_preparadores_de_alimentos,la_cuisine,beleza_saude,relogios_presentes,malas_acessorios,eletrodomesticos_2,construcao_ferramentas_ferramentas,pet_shop,esporte_lazer",2.072,1.493,1047.29,777.75,Seq Scan,Bitmap Heap Scan,27.94401544401544,0.579,0
+products,product_category_name,in,instrumentos_musicais,1.775,0.153,964.89,480.61,Seq Scan,Bitmap Heap Scan,91.38028169014085,1.6219999999999999,1
+products,product_category_name,in,"seguros_e_servicos,moveis_quarto,informatica_acessorios",2.684,0.557,1006.08,601.94,Seq Scan,Bitmap Heap Scan,79.24739195230998,2.1270000000000002,1
+products,product_category_name,in,"market_place,artes_e_artesanato",2.471,0.096,964.89,301.83,Seq Scan,Bitmap Heap Scan,96.11493322541482,2.375,1
+products,product_category_name,in,"telefonia,telefonia_fixa,alimentos",2.733,0.464,1006.08,594.26,Seq Scan,Bitmap Heap Scan,83.02231979509696,2.269,1
+products,product_category_name,in,"construcao_ferramentas_seguranca,esporte_lazer",1.979,0.7,964.89,629.4,Seq Scan,Bitmap Heap Scan,64.62860030318342,1.2790000000000001,1
+products,product_category_name,in,"industria_comercio_e_negocios,artigos_de_festas,tablets_impressao_imagem",2.036,0.078,1006.08,272.63,Seq Scan,Bitmap Heap Scan,96.16895874263261,1.958,1
+products,product_category_name,in,"pcs,casa_construcao,eletrodomesticos,pc_gamer,construcao_ferramentas_seguranca,portateis_casa_forno_e_cafe,audio,musica,tablets_impressao_imagem,telefonia_fixa",2.511,0.437,1047.29,629.81,Seq Scan,Bitmap Heap Scan,82.59657506969336,2.0740000000000003,1
+products,product_category_name,in,"artes_e_artesanato,dvds_blu_ray,construcao_ferramentas_iluminacao,informatica_acessorios,pc_gamer",2.962,0.588,1088.45,617.2,Seq Scan,Bitmap Heap Scan,80.14854827819042,2.374,1
+products,product_category_name,in,"artes_e_artesanato,moveis_escritorio,brinquedos",2.47,0.605,1006.08,602.89,Seq Scan,Bitmap Heap Scan,75.50607287449394,1.8650000000000002,1
+products,product_category_name,in,"audio,fraldas_higiene,pc_gamer,livros_importados,portateis_casa_forno_e_cafe",2.856,0.099,1088.45,338.89,Seq Scan,Bitmap Heap Scan,96.53361344537814,2.7569999999999997,1
+products,product_category_name,in,"cool_stuff,moveis_sala,seguros_e_servicos",2.196,0.429,1006.08,603.88,Seq Scan,Bitmap Heap Scan,80.46448087431693,1.7670000000000001,1
+products,product_category_name,in,"fashion_esporte,ferramentas_jardim,alimentos_bebidas,fashion_roupa_infanto_juvenil,construcao_ferramentas_construcao,dvds_blu_ray,artigos_de_festas,portateis_cozinha_e_preparadores_de_alimentos,construcao_ferramentas_ferramentas,moveis_colchao_e_estofado",2.606,0.518,1047.29,624.18,Seq Scan,Bitmap Heap Scan,80.12279355333845,2.088,1
+products,product_category_name,in,"alimentos,moveis_decoracao,market_place,perfumaria,cool_stuff,artes,construcao_ferramentas_jardim,industria_comercio_e_negocios,fraldas_higiene,telefonia",2.725,1.365,1047.29,725.53,Seq Scan,Bitmap Heap Scan,49.908256880733944,1.36,1
+products,product_category_name,in,flores,1.844,0.035,964.89,47.23,Seq Scan,Bitmap Heap Scan,98.10195227765726,1.8090000000000002,1
+products,product_category_name,in,"papelaria,construcao_ferramentas_seguranca,artigos_de_natal,esporte_lazer,telefonia_fixa",3.177,0.859,1088.45,670.23,Seq Scan,Bitmap Heap Scan,72.96191375511489,2.318,1
+orders,customer_id,not_null,IS NOT NULL,7.767,8.049,3332.41,3332.41,Seq Scan,Seq Scan,-3.630745461568162,-0.28199999999999914,0
+orders,order_status,not_null,IS NOT NULL,5.439,9.842,3332.41,3332.41,Seq Scan,Seq Scan,-80.95238095238096,-4.4030000000000005,0
+order_items,product_id,not_null,IS NOT NULL,5.308,5.328,3630.5,3630.5,Seq Scan,Seq Scan,-0.37678975131877285,-0.020000000000000462,0
+order_items,seller_id,not_null,IS NOT NULL,5.338,5.277,3630.5,3630.5,Seq Scan,Seq Scan,1.1427500936680393,0.06099999999999994,0
+customers,customer_state,not_null,IS NOT NULL,5.062,4.638,2545.41,2545.41,Seq Scan,Seq Scan,8.376135914658246,0.4240000000000004,0
+sellers,seller_state,not_null,IS NOT NULL,0.136,0.138,66.95,66.95,Seq Scan,Seq Scan,-1.4705882352941189,-0.0020000000000000018,0
+products,product_category_name,not_null,IS NOT NULL,1.49,1.586,882.51,882.51,Seq Scan,Seq Scan,-6.442953020134235,-0.09600000000000009,0

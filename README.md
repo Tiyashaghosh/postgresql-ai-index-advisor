@@ -1,287 +1,248 @@
-Explainable AI-Based Index Recommendation System for PostgreSQL Query Optimization
 
-An explainable AI-powered system that analyzes SQL queries, recommends potentially useful indexes for PostgreSQL, and validates performance improvements through query execution plans and benchmarking.
+# PostgreSQL AI Index Advisor
 
-Overview
+### Explainable AI-Based Index Recommendation System for Query Optimization
 
-PostgreSQL has a built-in cost-based query optimizer, but choosing appropriate indexes can still require database expertise and experimentation.
+An AI-powered PostgreSQL index advisor that analyzes SQL queries, predicts potentially useful indexes, explains its recommendations using SHAP, and validates performance improvements through database benchmarking.
 
-This project introduces an AI-assisted index recommendation system that combines machine learning, SQL analysis, explainable AI, and empirical database benchmarking to help users identify potentially beneficial indexes.
+<p align="center">
+  <b>Python · PostgreSQL · Scikit-learn · SHAP · Streamlit</b>
+</p>
 
-The system analyzes supported SQL queries, extracts relevant database statistics, predicts whether an index would be useful, explains the prediction using SHAP, and verifies the candidate index using PostgreSQL.
+---
 
-Key Features
+## Overview
 
-SQL Query Analysis: Parses and analyzes supported PostgreSQL SELECT queries using SQLGlot.
+PostgreSQL has a built-in cost-based query optimizer. However, identifying appropriate indexes and understanding their performance impact can still require manual experimentation.
 
-Database Statistics Extraction: Retrieves table and column statistics from PostgreSQL.
+This project introduces an **AI-assisted index recommendation system** that combines machine learning, SQL analysis, explainable AI, and empirical benchmarking.
 
-ML-Based Index Recommendation: Uses a Random Forest classifier to predict whether a candidate index is beneficial.
+The system:
 
-Explainable AI: Uses SHAP to explain the factors influencing model predictions.
+1. Analyzes supported SQL queries.
+2. Extracts relevant PostgreSQL statistics.
+3. Predicts whether a candidate index is beneficial.
+4. Explains the prediction using SHAP.
+5. Tests the candidate index against PostgreSQL.
+6. Presents the recommendation and generated SQL statement through an interactive dashboard.
 
-Performance Verification: Compares query execution plans and execution times before and after creating a candidate index.
+> **The model predicts. SHAP explains. PostgreSQL tests.**
 
-Interactive Dashboard: Provides a Streamlit interface to enter SQL queries and inspect recommendations.
+---
 
-SQL Generation: Generates a CREATE INDEX statement for the recommended index.
+## Key Features
 
-System Architecture
+| Feature | Description |
+|---|---|
+| SQL Analysis | Parses supported PostgreSQL SELECT queries using SQLGlot |
+| Feature Extraction | Retrieves table and column statistics from PostgreSQL |
+| ML Prediction | Uses a Random Forest classifier to predict index usefulness |
+| Explainable AI | Uses SHAP to interpret model predictions |
+| Performance Testing | Compares execution plans and execution times before and after indexing |
+| Interactive Dashboard | Provides a Streamlit interface for query analysis |
+| SQL Generation | Generates CREATE INDEX statements for user review |
 
-The project consists of two main workflows.
+---
 
-1. Model Training Pipeline
+## System Architecture
 
-Load the selected Olist e-commerce datasets into PostgreSQL.
+### 1. Model Training Pipeline
 
-Generate SQL query experiments.
+```text
+Olist Dataset
+      |
+      v
+PostgreSQL Database
+      |
+      v
+SQL Experiment Generation
+      |
+      v
+Before/After Index Benchmarking
+      |
+      v
+Performance-Based Label Generation
+      |
+      v
+Feature Engineering
+      |
+      v
+Random Forest Training
+      |
+      v
+Model Evaluation & Saving
+```
 
-Benchmark queries before and after creating candidate indexes.
+### 2. Query Recommendation Pipeline
 
-Calculate performance improvements and generate binary labels.
+```text
+       User SQL Query
+              |
+              v
+       SQLGlot Parsing
+              |
+              v
+   PostgreSQL Statistics
+              |
+              v
+      Feature Extraction
+              |
+              v
+    Random Forest Model
+              |
+              v
+       Index Prediction
+              |
+       +------+------+
+       |             |
+       v             v
+  SHAP Explanation   PostgreSQL
+                     Verification
+       |             |
+       +------+------+
+              |
+              v
+     Recommendation Dashboard
+              |
+              v
+      CREATE INDEX Statement
+```
 
-Extract and engineer model features.
+---
 
-Train and evaluate a Random Forest classifier.
+## Technology Stack
 
-Save the trained model for application use.
+| Category | Technologies |
+|---|---|
+| Language | Python |
+| Database | PostgreSQL |
+| SQL Parsing | SQLGlot |
+| Machine Learning | Scikit-learn |
+| ML Algorithm | Random Forest |
+| Explainability | SHAP |
+| Data Processing | Pandas, NumPy |
+| Dashboard | Streamlit |
+| Database Connectivity | Psycopg2 |
+| Model Persistence | Joblib |
 
-2. Query Recommendation Pipeline
+---
 
-User enters a SQL query through the Streamlit dashboard.
+## Dataset
 
-SQLGlot parses the query and identifies supported predicates.
-
-PostgreSQL statistics and execution plans are used to extract features.
-
-The trained Random Forest model predicts index usefulness.
-
-SHAP provides an explanation of the prediction.
-
-PostgreSQL empirically tests the candidate index.
-
-The dashboard displays execution-plan changes, benchmark results, and the suggested CREATE INDEX statement.
-
-Workflow principle: The model predicts, SHAP explains, and PostgreSQL tests.
-
-Technology Stack
-
-Component
-
-Technology
-
-Programming Language
-
-Python
-
-Database
-
-PostgreSQL
-
-SQL Parsing
-
-SQLGlot
-
-Machine Learning
-
-Scikit-learn
-
-Model
-
-Random Forest Classifier
-
-Explainable AI
-
-SHAP
-
-Data Processing
-
-Pandas, NumPy
-
-Dashboard
-
-Streamlit
-
-Database Connectivity
-
-Psycopg2
-
-Model Persistence
-
-Joblib
-
-Dataset
-
-The project uses the Brazilian E-Commerce Public Dataset by Olist, obtained from Kaggle.
+**Brazilian E-Commerce Public Dataset by Olist — Kaggle**
 
 The original dataset contains nine relational tables. This project uses five selected tables:
 
-Orders
+- Orders
+- Customers
+- Order Items
+- Products
+- Sellers
 
-Customers
+The original Olist dataset does not contain index-usefulness labels. These labels are generated through custom PostgreSQL benchmarking experiments.
 
-Order Items
+### Training Dataset
 
-Products
+| Property | Value |
+|---|---:|
+| Experiment records | 513 |
+| Predictor features | 27 |
+| Target variables | 1 |
+| Positive samples | 378 |
+| Negative samples | 135 |
 
-Sellers
+The target variable `index_recommended` is generated using two project-specific performance thresholds:
 
-The original raw datasets are excluded from this repository because of their size. The generated training and ML datasets are included.
+- Relative execution-time improvement ≥ 20%
+- Absolute execution-time improvement ≥ 1 ms
 
-Index usefulness labels are generated through the project's own PostgreSQL benchmarking experiments rather than being provided by the original Olist dataset.
+---
 
-Dataset Preparation
+## Machine Learning Results
 
-Download the Olist dataset from Kaggle and place the required CSV files in:
+**Model:** Random Forest Classifier
 
-data/raw/olist/
+**Validation:** 5-Fold Stratified Group Cross-Validation
 
-The selected files are:
-
-olist_orders_dataset.csv
-
-olist_customers_dataset.csv
-
-olist_order_items_dataset.csv
-
-olist_products_dataset.csv
-
-olist_sellers_dataset.csv
-
-Model Training and Evaluation
-
-The final machine learning dataset contains:
-
-513 experiment records
-
-27 predictor features
-
-1 target variable
-
-378 positive samples
-
-135 negative samples
-
-The target variable, index_recommended, indicates whether the candidate index satisfies both project-specific performance thresholds:
-
-At least 20% relative execution-time improvement.
-
-At least 1 ms absolute execution-time improvement.
-
-Model Evaluation
-
-The Random Forest classifier was evaluated using 5-fold Stratified Group Cross-Validation.
-
-Metric
-
-Score
-
-Accuracy
-
-95.15%
-
-Precision
-
-97.31%
-
-Recall
-
-96.13%
-
-F1-Score
-
-96.64%
-
-ROC-AUC
-
-96.21%
+| Evaluation Metric | Score |
+|---|---:|
+| Accuracy | **95.15%** |
+| Precision | **97.31%** |
+| Recall | **96.13%** |
+| F1-Score | **96.64%** |
+| ROC-AUC | **96.21%** |
 
 Group-based validation helps reduce leakage between related table-column-query groups.
 
-These results reflect the constructed Olist benchmark dataset and should not be interpreted as guaranteed performance on unseen database schemas.
+*These results represent evaluation on the constructed Olist benchmark dataset and do not guarantee equivalent performance on unseen database schemas.*
 
-Explainability with SHAP
+---
 
-SHAP (SHapley Additive exPlanations) is used to understand how individual features influence the model's predictions.
+## Explainable AI with SHAP
 
-The important features include:
+SHAP (SHapley Additive exPlanations) is used to explain how individual features influence the Random Forest model's predictions.
 
-Selectivity
+Important features include:
 
-Value Frequency
+1. Selectivity
+2. Value Frequency
+3. Query Cost Before Indexing
+4. Column and Table Characteristics
 
-Query Cost Before Indexing
+SHAP helps users understand which features push a prediction towards or away from recommending an index.
 
-Column and Table Characteristics
+---
 
-SHAP explanations help users understand why the classifier predicts that a candidate index may be useful.
+## Performance Benchmark
 
-SHAP explains model behaviour; it does not establish causality.
+A recorded experiment using an equality query on `orders.customer_id` produced the following results:
 
-Performance Benchmarking
+| Metric | Before Index | After Index |
+|---|---:|---:|
+| Execution Time | 10.027 ms | 0.039 ms |
+| Estimated Query Cost | 3581.01 | 8.44 |
+| Scan Type | Sequential Scan | Index Scan |
 
-The system verifies recommendations using actual PostgreSQL query execution.
+<details>
+<summary><strong>View benchmark improvement</strong></summary>
 
-A recorded experiment using an equality query on orders.customer_id produced the following results:
+- Absolute execution-time reduction: **9.988 ms**
+- Relative execution-time improvement: **99.61%**
+- Query plan changed from Sequential Scan to Index Scan.
 
-Metric
+Execution times can vary depending on hardware, caching, database configuration and system load.
 
-Before Index
+</details>
 
-After Index
+The candidate index is created for verification and dropped afterwards. The application generates the suggested SQL statement for the user to review; it does not automatically create a permanent index.
 
-Execution Time
+---
 
-10.027 ms
-
-0.039 ms
-
-Estimated Query Cost
-
-3581.01
-
-8.44
-
-Scan Type
-
-Sequential Scan
-
-Index Scan
-
-Recorded execution-time improvement: approximately 99.61%.
-
-Execution times may vary depending on database configuration, caching, hardware, and system load.
-
-The candidate index is created for verification and dropped afterwards. The application provides the suggested SQL statement for the user to review; it does not automatically create a permanent index.
-
-Supported SQL Queries
+## Supported SQL Queries
 
 The current implementation focuses on single-table SELECT queries containing a WHERE clause.
 
-Supported predicate types include:
+| Predicate Type | Supported |
+|---|---|
+| Equality (`=`) | Yes |
+| IN | Yes |
+| Range comparisons | Yes |
+| BETWEEN | Yes |
+| IS NOT NULL | Yes |
+| JOIN-based index recommendations | No |
+| GROUP BY / HAVING | No |
+| Correlated subqueries | No |
+| General ORDER BY-only workloads | No |
 
-Equality (=)
+---
 
-IN
+## Project Structure
 
-Range comparisons (<, >, <=, >=)
-
-BETWEEN
-
-IS NOT NULL
-
-The current advisor does not provide full index recommendations for JOIN predicates, GROUP BY, HAVING, correlated subqueries, or general ORDER BY-only workloads.
-
-Project Structure
-
+```text
 postgresql-ai-index-advisor/
 │
 ├── data/
 │   └── generated/
-│       ├── ml_dataset.csv
-│       ├── ml_dataset_v1.csv
-│       ├── training_data.csv
-│       └── training_data_v1.csv
 │
 ├── models/
 │   └── index_recommender.pkl
@@ -300,88 +261,116 @@ postgresql-ai-index-advisor/
 │   └── sql_recommender.py
 │
 ├── .gitignore
-└── requirements.txt
+├── requirements.txt
+└── README.md
+```
 
-Installation and Setup
+---
 
-1. Clone the Repository
+## Installation & Setup
 
+### Prerequisites
+
+- Python 3.12
+- PostgreSQL
+- Git
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/Tiyashaghosh/postgresql-ai-index-advisor.git
-cd postgresql-ai-index-advisor
 
-2. Create a Virtual Environment
+cd postgresql-ai-index-advisor
+```
+
+### 2. Create a Virtual Environment
 
 Using Conda:
 
+```bash
 conda create -n query_optimizer python=3.12
+
 conda activate query_optimizer
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4. Configure PostgreSQL
+### 4. Configure PostgreSQL
 
-Create a PostgreSQL database named:
+Create a database:
 
+```sql
 CREATE DATABASE query_optimizer;
+```
 
-Load the required Olist tables into PostgreSQL before running the application.
+Download the required Olist CSV files from Kaggle and place them inside:
 
-5. Configure Environment Variables
+```text
+data/raw/olist/
+```
 
-Create a .env file in the project root:
+Load the required tables into PostgreSQL using the provided project scripts.
 
+### 5. Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=query_optimizer
 DB_USER=postgres
 DB_PASSWORD=your_postgresql_password
+```
 
-Replace the password with your local PostgreSQL password.
+**Never upload your `.env` file or expose database credentials on GitHub.**
 
-Important: Never commit your .env file or expose database credentials publicly.
+### 6. Run the Application
 
-6. Run the Application
-
+```bash
 streamlit run src/app.py
+```
 
 The Streamlit dashboard should open in your browser.
 
-Limitations
+---
 
-The training dataset is based on five selected Olist tables.
+## Limitations
 
-The number of table-column-query groups is limited.
+- Training data is based on five selected Olist tables.
+- Only 20 table-column-query groups are represented.
+- Generalization to unseen database schemas requires further evaluation.
+- Benchmark execution times are affected by caching and system conditions.
+- Current recommendations focus on individual queries rather than workload-wide optimization.
+- Index storage and write-maintenance overhead are not included in the current recommendation objective.
+- SQL support is limited to the implemented query patterns.
 
-The model's generalization to unseen database schemas requires further evaluation.
+## Future Enhancements
 
-Benchmark execution times can vary due to caching and system conditions.
+- Extend evaluation to additional databases and schemas.
+- Support JOIN-based and more complex SQL queries.
+- Explore composite index recommendations.
+- Introduce workload-level index optimization.
+- Account for index storage and write-maintenance costs.
+- Compare additional machine learning algorithms.
+- Improve benchmark reproducibility and safe index cleanup.
 
-Current recommendations focus on individual queries rather than workload-wide optimization.
+---
 
-Index storage costs and write-operation overhead are not included in the current recommendation objective.
+## Author
 
-SQL support is limited to the implemented query patterns.
+**Tiyasha Ghosh**
 
-Future Enhancements
-
-Expand evaluation across additional databases and schemas.
-
-Support JOIN-based and more complex SQL queries.
-
-Explore composite index recommendations.
-
-Incorporate workload-level optimization.
-
-Account for index storage and write-maintenance overhead.
-
-Compare additional machine learning models.
-
-Improve benchmark reproducibility and index-cleanup safety.
-
-
+B.Tech – Computer Science and Engineering (AI & ML)
 
 SRM Institute of Science and Technology
 
-An academic project exploring the integration of machine learning, explainable AI, and PostgreSQL query optimization.
+---
+
+<p align="center">
+  <i>An academic project integrating Machine Learning, Explainable AI and PostgreSQL Query Optimization.</i>
+</p>
